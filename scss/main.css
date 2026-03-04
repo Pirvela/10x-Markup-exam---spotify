@@ -1,7 +1,63 @@
+@charset "UTF-8";
+/* =====================
+  Global / Page Layout
+===================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Mobile default */
+.sidebar {
+  display: none;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 16px;
+}
+
+.main__title {
+  margin: 0 0 8px;
+  font-size: 24px;
+}
+
+.main__hint {
+  margin: 0;
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+/* Desktop ≥1200px */
+@media (min-width: 1200px) {
+  .app {
+    display: flex;
+  }
+  .sidebar {
+    display: block;
+    width: 260px;
+    min-height: 100vh;
+  }
+  .main {
+    flex: 1;
+    padding: 24px;
+  }
+}
 /* =====================
   Sidebar Styles
 ===================== */
-
 .sidebar {
   background: #121212;
   padding: 16px;
@@ -11,7 +67,6 @@
   list-style: none;
   padding: 0;
   margin: 0;
-
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -25,15 +80,12 @@
   display: flex;
   align-items: center;
   gap: 12px;
-
   padding: 10px 12px;
   border-radius: 10px;
-
   color: #b3b3b3;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
-
   transition: background 0.2s ease, color 0.2s ease;
 }
 
@@ -60,7 +112,8 @@
 .sidebar__text {
   line-height: 1;
 }
+
 .sidebar {
   position: sticky;
   top: 0;
-}
+}/*# sourceMappingURL=main.css.map */

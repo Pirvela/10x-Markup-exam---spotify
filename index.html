@@ -3,8 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Spotify</title>
+
+    <!-- IMPORTANT: link to the compiled css you actually generate -->
+    <!-- If your compiler outputs to scss/main.css, use ./scss/main.css -->
+    <!-- If it outputs to css/main.css, use ./css/main.css -->
+    <link rel="stylesheet" href="./scss/main.css" />
   </head>
-  <body></body>
+
+  <body>
+    <div class="app">
+      <!-- Sidebar (hidden on mobile, visible on desktop) -->
+      <aside class="sidebar" aria-label="Sidebar">
+        <nav class="sidebar__nav" aria-label="Sidebar navigation">
+          <ul class="sidebar__list">
+            <li class="sidebar__item sidebar__item--active">
+              <a href="#" class="sidebar__link">
+                <span class="sidebar__icon" aria-hidden="true"></span>
+                <span class="sidebar__text">My Library</span>
+              </a>
+            </li>
+
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">
+                <span class="sidebar__icon" aria-hidden="true"></span>
+                <span class="sidebar__text">Pins</span>
+              </a>
+            </li>
+
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">
+                <span class="sidebar__icon" aria-hidden="true"></span>
+                <span class="sidebar__text">Playlists</span>
+              </a>
+            </li>
+
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">
+                <span class="sidebar__icon" aria-hidden="true"></span>
+                <span class="sidebar__text">Liked songs</span>
+              </a>
+            </li>
+
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">
+                <span class="sidebar__icon" aria-hidden="true"></span>
+                <span class="sidebar__text">Saves</span>
+              </a>
+            </li>
+
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">
+                <span class="sidebar__icon" aria-hidden="true"></span>
+                <span class="sidebar__text">Albums</span>
+              </a>
+            </li>
+
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">
+                <span class="sidebar__icon" aria-hidden="true"></span>
+                <span class="sidebar__text">Folders</span>
+              </a>
+            </li>
+
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">
+                <span class="sidebar__icon" aria-hidden="true"></span>
+                <span class="sidebar__text">Podcasts</span>
+              </a>
+            </li>
+
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">
+                <span class="sidebar__icon" aria-hidden="true"></span>
+                <span class="sidebar__text">Audiobooks</span>
+              </a>
+            </li>
+
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">
+                <span class="sidebar__icon" aria-hidden="true"></span>
+                <span class="sidebar__text">Artists</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main -->
+      <main class="main" aria-label="Main content">
+        <h1 class="main__title">Home</h1>
+        <p class="main__hint">Mobile-first: Sidebar is hidden on small screens.</p>
+      </main>
+    </div>
+  </body>
 </html>
