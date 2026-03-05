@@ -23,6 +23,6 @@
   height: $size;
 }
 
-@mixin hover-transition($props: all) {
-  transition: $props $transition-fast;
+@mixin hover-transition($props...) {
+  transition: $props 0.2s;
 }

@@ -1,0 +1,76 @@
+.mix-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 16px;
+}
+
+.mix-card {
+  cursor: pointer;
+}
+
+/* COVER IMAGE */
+.mix-card__art {
+  position: relative;
+  border-radius: 12px;
+}
+
+/* მთავარი სურათი */
+.mix-card__art img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  position: relative;
+  z-index: 3;
+}
+
+/* ზედა პატარა ზოლი (30%) */
+.mix-card__art::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 12px;
+  right: 12px;
+  height: 6px;
+  background: rgba(206, 110, 154, 0.3);
+  border-radius: 6px;
+  z-index: 1;
+}
+
+/* მეორე ზოლი (15%) */
+.mix-card__art::after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 24px;
+  right: 24px;
+  height: 6px;
+  background: rgba(206, 110, 154, 0.15);
+  border-radius: 6px;
+  z-index: 0;
+}
+
+/* TITLE + COUNT */
+.mix-card__title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.mix-card__title {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+}
+
+.mix-card__count {
+  font-size: 14px;
+  color: #ce6e9a;
+}
+
+/* DESCRIPTION */
+.mix-card__desc {
+  font-size: 13px;
+  color: #b3b3b3;
+  margin-top: 4px;
+}

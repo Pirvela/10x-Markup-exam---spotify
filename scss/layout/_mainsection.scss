@@ -1,0 +1,35 @@
+@use "../base" as *;
+
+.section {
+  margin-bottom: $spacing-xl;
+}
+
+.section-header {
+  @include flex-row(space-between, center);
+  margin-bottom: $spacing-md;
+}
+
+.section-title {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-bold;
+  color: $color-text-primary;
+}
+
+.section-actions {
+  @include flex-row(flex-end, center);
+  gap: $spacing-xs;
+}
+
+.section-action-btn {
+  @include square(40px);
+  @include flex-row(center, center);
+  @include hover-transition(color);
+  border-radius: $radius-circle;
+  color: $color-text-muted;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-text-primary;
+    background-color: $color-bg-elevated;
+  }
+}
