@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: $sidebar-width 1fr;
   grid-template-areas:
-    "sidebar header"
+    "header header"
     "sidebar content"
     "sidebar footer";
   height: 100vh;

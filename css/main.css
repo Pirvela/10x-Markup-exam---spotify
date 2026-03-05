@@ -46,7 +46,7 @@ button {
 .page-wrapper {
   display: grid;
   grid-template-columns: 240px 1fr;
-  grid-template-areas: "sidebar header" "sidebar content" "sidebar footer";
+  grid-template-areas: "header header" "sidebar content" "sidebar footer";
   height: 100vh;
   overflow: hidden;
   grid-template-rows: auto 1fr auto;
