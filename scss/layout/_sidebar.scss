@@ -1,0 +1,80 @@
+/* ---- SIDEBAR LIST (figma sizes) ---- */
+
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-item {
+  border-radius: 5px; /* figma radius */
+}
+
+/* clickable row */
+.sidebar-item > a {
+  display: flex;
+  align-items: center;
+  gap: 10px;              /* figma gap */
+  height: 40px;           /* 40.41 ≈ 40 */
+  padding: 0 12px;        /* გვერდებიდან */
+  border-radius: 5px;     /* figma radius */
+
+  font-family: "Satoshi", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;         /* რომ height ზუსტად დაჯდეს */
+  color: #b3b3b3;
+
+  text-decoration: none;
+}
+
+/* icon size */
+.sidebar-icon {
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+  object-fit: contain;
+  opacity: 0.85;
+}
+
+/* text stays on one line */
+.sidebar-item > a span {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-item > a::after {
+  content: none;
+}
+
+.sidebar-item:nth-child(1) > a::after,
+.sidebar-item:nth-child(2) > a::after {
+  content: "";
+  width: 8px;
+  height: 9px;
+  background-image: url("../assets/icons/arrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: auto;
+}
+
+/* hover / active */
+.sidebar-item > a:hover {
+  background: #1a1a1a;
+}
+
+.sidebar-item--active > a {
+  background: #2a2a2a;
+  color: #ffffff;
+}
+
+.sidebar-item--active > a::after {
+  border-right-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
