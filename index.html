@@ -4,96 +4,126 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify Clone</title>
-    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <div class="page-wrapper">
       <!-- SIDEBAR -->
-        <aside class="sidebar">
+      <aside class="sidebar">
         <nav class="sidebar-nav">
-  <ul class="sidebar-list">
+          <ul class="sidebar-list">
+            <li class="sidebar-item">
+              <a href="#">
+                <img
+                  class="sidebar-icon"
+                  src="./assets/icons/Library.png"
+                  alt=""
+                />
+                <span>Library</span>
+              </a>
+            </li>
 
-  <li class="sidebar-item">
-      <a href="#">
-        <img class="sidebar-icon" src="./assets/icons/Library.png" alt="">
-        <span>Library</span>
-      </a>
-    </li>
+            <li class="sidebar-item">
+              <a href="#">
+                <img class="sidebar-icon" src="./assets/icons/Pin.png" alt="" />
+                <span>Pins</span>
+              </a>
+            </li>
 
-    <li class="sidebar-item">
-      <a href="#">
-        <img class="sidebar-icon" src="./assets/icons/Pin.png" alt="">
-        <span>Pins</span>
-      </a>
-    </li>
+            <li class="sidebar-item">
+              <a href="#">
+                <img
+                  class="sidebar-icon"
+                  src="./assets/icons/Playlist.png"
+                  alt=""
+                />
+                <span>Playlists</span>
+              </a>
+            </li>
 
-    <li class="sidebar-item">
-      <a href="#">
-        <img class="sidebar-icon" src="./assets/icons/Playlist.png" alt="">
-        <span>Playlists</span>
-      </a>
-    </li>
+            <li class="sidebar-item">
+              <a href="#">
+                <img
+                  class="sidebar-icon"
+                  src="./assets/icons/Like.png"
+                  alt=""
+                />
+                <span>Liked Songs</span>
+              </a>
+            </li>
 
-    <li class="sidebar-item">
-      <a href="#">
-        <img class="sidebar-icon" src="./assets/icons/Like.png" alt="">
-        <span>Liked Songs</span>
-      </a>
-    </li>
+            <li class="sidebar-item">
+              <a href="#">
+                <img
+                  class="sidebar-icon"
+                  src="./assets/icons/Save.png"
+                  alt=""
+                />
+                <span>Saves</span>
+              </a>
+            </li>
 
-    <li class="sidebar-item">
-      <a href="#">
-        <img class="sidebar-icon" src="./assets/icons/Save.png" alt="">
-        <span>Saves</span>
-      </a>
-    </li>
+            <li class="sidebar-item">
+              <a href="#">
+                <img
+                  class="sidebar-icon"
+                  src="./assets/icons/Album.png"
+                  alt=""
+                />
+                <span>Albums</span>
+              </a>
+            </li>
 
-    <li class="sidebar-item">
-      <a href="#">
-        <img class="sidebar-icon" src="./assets/icons/Album.png" alt="">
-        <span>Albums</span>
-      </a>
-    </li>
+            <li class="sidebar-item">
+              <a href="#">
+                <img
+                  class="sidebar-icon"
+                  src="./assets/icons/Folder.png"
+                  alt=""
+                />
+                <span>Folders</span>
+              </a>
+            </li>
 
-    <li class="sidebar-item">
-      <a href="#">
-        <img class="sidebar-icon" src="./assets/icons/Folder.png" alt="">
-        <span>Folders</span>
-      </a>
-    </li>
+            <li class="sidebar-item">
+              <a href="#">
+                <img
+                  class="sidebar-icon"
+                  src="./assets/icons/Podcast.png"
+                  alt=""
+                />
+                <span>Podcasts</span>
+              </a>
+            </li>
 
-    <li class="sidebar-item">
-      <a href="#">
-        <img class="sidebar-icon" src="./assets/icons/Podcast.png" alt="">
-        <span>Podcasts</span>
-      </a>
-    </li>
+            <li class="sidebar-item">
+              <a href="#">
+                <img
+                  class="sidebar-icon"
+                  src="./assets/icons/Audiobook.png"
+                  alt=""
+                />
+                <span>Audiobooks</span>
+              </a>
+            </li>
 
-    <li class="sidebar-item">
-      <a href="#">
-        <img class="sidebar-icon" src="./assets/icons/Audiobook.png" alt="">
-        <span>Audiobooks</span>
-      </a>
-    </li>
-
-    <li class="sidebar-item">
-      <a href="#">
-        <img class="sidebar-icon" src="./assets/icons/Artist.png" alt="">
-        <span>Artists</span>
-      </a>
-    </li>
-
-  </ul>
-</nav>
+            <li class="sidebar-item">
+              <a href="#">
+                <img
+                  class="sidebar-icon"
+                  src="./assets/icons/Artist.png"
+                  alt=""
+                />
+                <span>Artists</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </aside>
 
-      <!-- CONTENT AREA (Header + Main ერთად) -->
-      <header class="site-header">
-        <!-- შემდეგ ეტაპზე -->
-      </header>
-      <!-- MAIN CONTENT -->
+      <header class="site-header"></header>
+
       <main class="main-content">
-        <!-- შემდეგ ეტაპზე -->
         <nav class="filters">
           <button class="filter-chip filter-chip--active">All</button>
           <button class="filter-chip">Music</button>
@@ -130,7 +160,10 @@
           <div class="mix-grid">
             <div class="mix-card">
               <div class="mix-card__art">
-                <img src="./assets/images/image 6.png" alt="Discover Weekly" />
+                <img
+                  src="./assets/images/discoverweekly.png"
+                  alt="Discover Weekly"
+                />
               </div>
               <div class="mix-card__title-row">
                 <h3 class="mix-card__title">Discover Weekly</h3>
@@ -140,7 +173,124 @@
             </div>
             <div class="mix-card">
               <div class="mix-card__art">
-                <img src="./assets/images/image 6.png" alt="Discover Weekly" />
+                <img src="./assets/images/linkinpark.png" alt="Linkin Park" />
+              </div>
+              <div class="mix-card__title-row">
+                <h3 class="mix-card__title">Daily Mix 1</h3>
+                <span class="mix-card__count">50</span>
+              </div>
+              <p class="mix-card__desc">
+                Linkin Park, System Of A Down, Coal Chamber...
+              </p>
+            </div>
+            <div class="mix-card">
+              <div class="mix-card__art">
+                <img src="./assets/images/dailymix2.png" alt="Daily Mix 2" />
+              </div>
+              <div class="mix-card__title-row">
+                <h3 class="mix-card__title">Daily Mix 2</h3>
+                <span class="mix-card__count">50</span>
+              </div>
+              <p class="mix-card__desc">
+                Avril Lavigne, Lorde, Charli XCX and more.
+              </p>
+            </div>
+            <div class="mix-card">
+              <div class="mix-card__art">
+                <img src="./assets/images/dailymix3.png" alt="Daily Mix 3" />
+              </div>
+              <div class="mix-card__title-row">
+                <h3 class="mix-card__title">Daily Mix 3</h3>
+                <span class="mix-card__count">50</span>
+              </div>
+              <p class="mix-card__desc">
+                The Strokes, Martin Garrix, MGMT and more
+              </p>
+            </div>
+            <div class="mix-card">
+              <div class="mix-card__art">
+                <img src="./assets/images/dailymix4.png" alt="Daily Mix 4" />
+              </div>
+              <div class="mix-card__title-row">
+                <h3 class="mix-card__title">Daily Mix 4</h3>
+                <span class="mix-card__count">50</span>
+              </div>
+              <p class="mix-card__desc">
+                Chuck Berry, Elvis Presley, Roy Orbison and more
+              </p>
+            </div>
+            <div class="mix-card">
+              <div class="mix-card__art">
+                <img
+                  src="./assets/images/franksinatramix.png"
+                  alt="Daily Mix 5"
+                />
+              </div>
+              <div class="mix-card__title-row">
+                <h3 class="mix-card__title">Daily Mix 5</h3>
+                <span class="mix-card__count">50</span>
+              </div>
+              <p class="mix-card__desc">
+                Frank Sinatra, Gerhard Trede, Dean Martin and more
+              </p>
+            </div>
+            <div class="mix-card">
+              <div class="mix-card__art">
+                <img src="./assets/images/nirvana.png" alt="Nirvana" />
+              </div>
+              <div class="mix-card__title-row">
+                <h3 class="mix-card__title">Nirvana Radio</h3>
+                <span class="mix-card__count">50</span>
+              </div>
+              <p class="mix-card__desc">
+                The Strokes, Martin Garrix, MGMT and more
+              </p>
+            </div>
+            <div class="mix-card">
+              <div class="mix-card__art">
+                <img src="./assets/images/falloutboy.png" alt="Fall Out Boy" />
+              </div>
+              <div class="mix-card__title-row">
+                <h3 class="mix-card__title">Fall Out Boy Ra...</h3>
+                <span class="mix-card__count">50</span>
+              </div>
+              <p class="mix-card__desc">
+                With Panic! At The Disco, The All-American Rejects,...
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="section-header">
+            <h2 class="section-title">Made For You</h2>
+            <div class="section-actions">
+              <button class="section-action-btn">
+                <img
+                  src="./assets/icons/Name=Arrow-Left, Filled=No.png"
+                  alt="Left arrow icon"
+                />
+              </button>
+              <button class="section-action-btn">
+                <img
+                  src="./assets/icons/Name=Arrow-Right, Filled=No.png"
+                  alt="Right arrow icon "
+                />
+              </button>
+              <button class="section-action-btn">
+                <img
+                  src="./assets/icons/Name=More, Filled=No.png"
+                  alt="More options icon"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="mix-grid">
+            <div class="mix-card">
+              <div class="mix-card__art">
+                <img
+                  src="./assets/images/discoverweekly.png"
+                  alt="Discover Weekly"
+                />
               </div>
               <div class="mix-card__title-row">
                 <h3 class="mix-card__title">Discover Weekly</h3>
@@ -150,70 +300,95 @@
             </div>
             <div class="mix-card">
               <div class="mix-card__art">
-                <img src="./assets/images/image 6.png" alt="Discover Weekly" />
+                <img src="./assets/images/linkinpark.png" alt="Linkin Park" />
               </div>
               <div class="mix-card__title-row">
-                <h3 class="mix-card__title">Discover Weekly</h3>
+                <h3 class="mix-card__title">Daily Mix 1</h3>
                 <span class="mix-card__count">50</span>
               </div>
-              <p class="mix-card__desc">Your weekly mixtape of fresh music.</p>
+              <p class="mix-card__desc">
+                Linkin Park, System Of A Down, Coal Chamber...
+              </p>
             </div>
             <div class="mix-card">
               <div class="mix-card__art">
-                <img src="./assets/images/image 6.png" alt="Discover Weekly" />
+                <img src="./assets/images/dailymix2.png" alt="Daily Mix 2" />
               </div>
               <div class="mix-card__title-row">
-                <h3 class="mix-card__title">Discover Weekly</h3>
+                <h3 class="mix-card__title">Daily Mix 2</h3>
                 <span class="mix-card__count">50</span>
               </div>
-              <p class="mix-card__desc">Your weekly mixtape of fresh music.</p>
+              <p class="mix-card__desc">
+                Avril Lavigne, Lorde, Charli XCX and more.
+              </p>
             </div>
             <div class="mix-card">
               <div class="mix-card__art">
-                <img src="./assets/images/image 6.png" alt="Discover Weekly" />
+                <img src="./assets/images/dailymix3.png" alt="Daily Mix 3" />
               </div>
               <div class="mix-card__title-row">
-                <h3 class="mix-card__title">Discover Weekly</h3>
+                <h3 class="mix-card__title">Daily Mix 3</h3>
                 <span class="mix-card__count">50</span>
               </div>
-              <p class="mix-card__desc">Your weekly mixtape of fresh music.</p>
+              <p class="mix-card__desc">
+                The Strokes, Martin Garrix, MGMT and more
+              </p>
             </div>
             <div class="mix-card">
               <div class="mix-card__art">
-                <img src="./assets/images/image 6.png" alt="Discover Weekly" />
+                <img src="./assets/images/dailymix4.png" alt="Daily Mix 4" />
               </div>
               <div class="mix-card__title-row">
-                <h3 class="mix-card__title">Discover Weekly</h3>
+                <h3 class="mix-card__title">Daily Mix 4</h3>
                 <span class="mix-card__count">50</span>
               </div>
-              <p class="mix-card__desc">Your weekly mixtape of fresh music.</p>
+              <p class="mix-card__desc">
+                Chuck Berry, Elvis Presley, Roy Orbison and more
+              </p>
             </div>
             <div class="mix-card">
               <div class="mix-card__art">
-                <img src="./assets/images/image 6.png" alt="Discover Weekly" />
+                <img
+                  src="./assets/images/franksinatramix.png"
+                  alt="Daily Mix 5"
+                />
               </div>
               <div class="mix-card__title-row">
-                <h3 class="mix-card__title">Discover Weekly</h3>
+                <h3 class="mix-card__title">Daily Mix 5</h3>
                 <span class="mix-card__count">50</span>
               </div>
-              <p class="mix-card__desc">Your weekly mixtape of fresh music.</p>
+              <p class="mix-card__desc">
+                Frank Sinatra, Gerhard Trede, Dean Martin and more
+              </p>
             </div>
             <div class="mix-card">
               <div class="mix-card__art">
-                <img src="./assets/images/image 6.png" alt="Discover Weekly" />
+                <img src="./assets/images/nirvana.png" alt="Nirvana" />
               </div>
               <div class="mix-card__title-row">
-                <h3 class="mix-card__title">Discover Weekly</h3>
+                <h3 class="mix-card__title">Nirvana Radio</h3>
                 <span class="mix-card__count">50</span>
               </div>
-              <p class="mix-card__desc">Your weekly mixtape of fresh music.</p>
+              <p class="mix-card__desc">
+                The Strokes, Martin Garrix, MGMT and more
+              </p>
+            </div>
+            <div class="mix-card">
+              <div class="mix-card__art">
+                <img src="./assets/images/falloutboy.png" alt="Fall Out Boy" />
+              </div>
+              <div class="mix-card__title-row">
+                <h3 class="mix-card__title">Fall Out Boy Ra...</h3>
+                <span class="mix-card__count">50</span>
+              </div>
+              <p class="mix-card__desc">
+                With Panic! At The Disco, The All-American Rejects,...
+              </p>
             </div>
           </div>
         </section>
       </main>
-      <footer class="player">
-        <!-- შემდეგ ეტაპზე -->
-      </footer>
+      <footer class="player"></footer>
     </div>
     <!-- BOTTOM PLAYER (fixed) -->
   </body>

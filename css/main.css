@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: "Satoshi", sans-serif;
+  font-family: "Satoshi-Regular";
   font-size: 14px;
   color: #e0e0e0;
   background-color: #060606;
@@ -40,27 +40,150 @@ button {
   padding: 0;
 }
 
+/**
+* @license
+*
+* Font Family: Satoshi
+* Designed by: Deni Anggara
+* URL: https://www.fontshare.com/fonts/satoshi
+* © 2026 Indian Type Foundry
+*
+* Satoshi Light 
+* Satoshi LightItalic 
+* Satoshi Regular 
+* Satoshi Italic 
+* Satoshi Medium 
+* Satoshi MediumItalic 
+* Satoshi Bold 
+* Satoshi BoldItalic 
+* Satoshi Black 
+* Satoshi BlackItalic 
+* Satoshi Variable (Variable font)
+* Satoshi VariableItalic (Variable font)
+
+*
+*/
 @font-face {
-  font-family: "Satoshi";
-  src: local("Satoshi Bold"), url(/fonts/Satoshi_complete/Fonts/OTF/Satoshi-Regular.otf);
+  font-family: "Satoshi-Light";
+  src: url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-Light.woff2") format("woff2"), url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-Light.woff") format("woff"), url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-LightItalic";
+  src: url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-LightItalic.woff2") format("woff2"), url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-LightItalic.woff") format("woff"), url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-Regular.woff2") format("woff2"), url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-Regular.woff") format("woff"), url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-Italic";
+  src: url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-Italic.woff2") format("woff2"), url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-Italic.woff") format("woff"), url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-Medium.woff2") format("woff2"), url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-Medium.woff") format("woff"), url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-MediumItalic";
+  src: url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-MediumItalic.woff2") format("woff2"), url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-MediumItalic.woff") format("woff"), url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-Bold.woff2") format("woff2"), url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-Bold.woff") format("woff"), url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-BoldItalic";
+  src: url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-BoldItalic.woff2") format("woff2"), url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-BoldItalic.woff") format("woff"), url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Black";
+  src: url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-Black.woff2") format("woff2"), url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-Black.woff") format("woff"), url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-BlackItalic";
+  src: url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-BlackItalic.woff2") format("woff2"), url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-BlackItalic.woff") format("woff"), url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 900.0;
+*
+* available axes:
+'wght' (range from 300.0 to 900.0
+*/
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-Variable.woff2") format("woff2"), url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-Variable.woff") format("woff"), url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 900.0;
+*
+* available axes:
+'wght' (range from 300.0 to 900.0
+*/
+@font-face {
+  font-family: "Satoshi-VariableItalic";
+  src: url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-VariableItalic.woff2") format("woff2"), url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-VariableItalic.woff") format("woff"), url("/fonts/Satoshi_complete/Fonts/WEB/fonts/Satoshi-VariableItalic.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: italic;
 }
 .mix-grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 16px;
+  overflow: visible;
 }
 
 .mix-card {
   cursor: pointer;
+  overflow: visible;
+  padding-top: 14px;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
 }
 
-/* COVER IMAGE */
 .mix-card__art {
   position: relative;
   border-radius: 12px;
+  overflow: visible;
 }
 
-/* მთავარი სურათი */
 .mix-card__art img {
   width: 100%;
   display: block;
@@ -69,7 +192,6 @@ button {
   z-index: 3;
 }
 
-/* ზედა პატარა ზოლი (30%) */
 .mix-card__art::before {
   content: "";
   position: absolute;
@@ -77,12 +199,10 @@ button {
   left: 12px;
   right: 12px;
   height: 6px;
-  background: rgba(206, 110, 154, 0.3);
-  border-radius: 6px;
-  z-index: 1;
+  border-radius: 6px 6px 0 0;
+  z-index: 2;
 }
 
-/* მეორე ზოლი (15%) */
 .mix-card__art::after {
   content: "";
   position: absolute;
@@ -90,12 +210,10 @@ button {
   left: 24px;
   right: 24px;
   height: 6px;
-  background: rgba(206, 110, 154, 0.15);
-  border-radius: 6px;
-  z-index: 0;
+  border-radius: 6px 6px 0 0;
+  z-index: 1;
 }
 
-/* TITLE + COUNT */
 .mix-card__title-row {
   display: flex;
   justify-content: space-between;
@@ -105,20 +223,138 @@ button {
 
 .mix-card__title {
   font-size: 14px;
-  font-weight: 700;
-  color: white;
+  color: #e0e0e0;
+  font-weight: normal;
 }
 
-.mix-card__count {
-  font-size: 14px;
+.mix-card__desc {
+  font-size: 12px;
+  color: #898989;
+  margin-top: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* CARD 1 */
+.mix-card:nth-child(1) .mix-card__count {
   color: #ce6e9a;
 }
 
-/* DESCRIPTION */
-.mix-card__desc {
-  font-size: 13px;
-  color: #b3b3b3;
-  margin-top: 4px;
+.mix-card:nth-child(1) .mix-card__art::before {
+  background: #ce6e9a;
+  opacity: 0.3;
+}
+
+.mix-card:nth-child(1) .mix-card__art::after {
+  background: #ce6e9a;
+  opacity: 0.15;
+}
+
+/* CARD 2 */
+.mix-card:nth-child(2) .mix-card__count {
+  color: #50e3c2;
+}
+
+.mix-card:nth-child(2) .mix-card__art::before {
+  background: #50e3c2;
+  opacity: 0.3;
+}
+
+.mix-card:nth-child(2) .mix-card__art::after {
+  background: #50e3c2;
+  opacity: 0.15;
+}
+
+/* CARD 3 */
+.mix-card:nth-child(3) .mix-card__count {
+  color: #f4b8bd;
+}
+
+.mix-card:nth-child(3) .mix-card__art::before {
+  background: #f4b8bd;
+  opacity: 0.3;
+}
+
+.mix-card:nth-child(3) .mix-card__art::after {
+  background: #f4b8bd;
+  opacity: 0.15;
+}
+
+/* CARD 4 */
+.mix-card:nth-child(4) .mix-card__count {
+  color: #c3e7b7;
+}
+
+.mix-card:nth-child(4) .mix-card__art::before {
+  background: #c3e7b7;
+  opacity: 0.3;
+}
+
+.mix-card:nth-child(4) .mix-card__art::after {
+  background: #c3e7b7;
+  opacity: 0.15;
+}
+
+/* CARD 5 */
+.mix-card:nth-child(5) .mix-card__count {
+  color: #f37fa6;
+}
+
+.mix-card:nth-child(5) .mix-card__art::before {
+  background: #f37fa6;
+  opacity: 0.3;
+}
+
+.mix-card:nth-child(5) .mix-card__art::after {
+  background: #f37fa6;
+  opacity: 0.15;
+}
+
+/* CARD 6 */
+.mix-card:nth-child(6) .mix-card__count {
+  color: #a0bec8;
+}
+
+.mix-card:nth-child(6) .mix-card__art::before {
+  background: #a0bec8;
+  opacity: 0.3;
+}
+
+.mix-card:nth-child(6) .mix-card__art::after {
+  background: #a0bec8;
+  opacity: 0.15;
+}
+
+/* CARD 7 */
+.mix-card:nth-child(7) .mix-card__count {
+  color: #fdd87d;
+}
+
+.mix-card:nth-child(7) .mix-card__art::before {
+  background: #fdd87d;
+  opacity: 0.3;
+}
+
+.mix-card:nth-child(7) .mix-card__art::after {
+  background: #fdd87d;
+  opacity: 0.15;
+}
+
+/* CARD 8 */
+.mix-card:nth-child(8) .mix-card__count {
+  color: #d4b2a9;
+}
+
+.mix-card:nth-child(8) .mix-card__art::before {
+  background: #d4b2a9;
+  opacity: 0.3;
+}
+
+.mix-card:nth-child(8) .mix-card__art::after {
+  background: #d4b2a9;
+  opacity: 0.15;
 }
 
 .filters {
@@ -191,11 +427,10 @@ aside.sidebar {
 
 header {
   grid-area: header;
-  background-color: green;
+  background-color: #060606;
   display: flex;
   align-items: center;
   padding: 24px;
-  height: 100px;
 }
 
 .main-content {
@@ -221,6 +456,84 @@ footer {
   justify-content: center;
   height: 72px;
   background-color: blue;
+}
+
+/* ---- SIDEBAR LIST (figma sizes) ---- */
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-item {
+  border-radius: 5px; /* figma radius */
+}
+
+/* clickable row */
+.sidebar-item > a {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* figma gap */
+  height: 40px; /* 40.41 ≈ 40 */
+  padding: 0 12px; /* გვერდებიდან */
+  border-radius: 5px; /* figma radius */
+  font-family: "Satoshi", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1; /* რომ height ზუსტად დაჯდეს */
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+/* icon size */
+.sidebar-icon {
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+  object-fit: contain;
+  opacity: 0.85;
+}
+
+/* text stays on one line */
+.sidebar-item > a span {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-item > a::after {
+  content: none;
+}
+
+.sidebar-item:nth-child(1) > a::after,
+.sidebar-item:nth-child(2) > a::after {
+  content: "";
+  width: 8px;
+  height: 9px;
+  background-image: url("../assets/icons/arrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: auto;
+}
+
+/* hover / active */
+.sidebar-item > a:hover {
+  background: #1a1a1a;
+}
+
+.sidebar-item--active > a {
+  background: #2a2a2a;
+  color: #ffffff;
+}
+
+.sidebar-item--active > a::after {
+  border-right-color: #ffffff;
+  border-bottom-color: #ffffff;
 }
 
 .section {

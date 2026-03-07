@@ -1,20 +1,26 @@
+@use "../base" as *;
+
 .mix-grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 16px;
+  overflow: visible;
 }
 
 .mix-card {
   cursor: pointer;
+  overflow: visible;
+  padding-top: 14px;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
 }
 
-/* COVER IMAGE */
 .mix-card__art {
   position: relative;
   border-radius: 12px;
+  overflow: visible;
 }
 
-/* მთავარი სურათი */
 .mix-card__art img {
   width: 100%;
   display: block;
@@ -22,8 +28,6 @@
   position: relative;
   z-index: 3;
 }
-
-/* ზედა პატარა ზოლი (30%) */
 .mix-card__art::before {
   content: "";
   position: absolute;
@@ -31,12 +35,10 @@
   left: 12px;
   right: 12px;
   height: 6px;
-  background: rgba(206, 110, 154, 0.3);
-  border-radius: 6px;
-  z-index: 1;
+  border-radius: 6px 6px 0 0;
+  z-index: 2;
 }
 
-/* მეორე ზოლი (15%) */
 .mix-card__art::after {
   content: "";
   position: absolute;
@@ -44,12 +46,10 @@
   left: 24px;
   right: 24px;
   height: 6px;
-  background: rgba(206, 110, 154, 0.15);
-  border-radius: 6px;
-  z-index: 0;
+  border-radius: 6px 6px 0 0;
+  z-index: 1;
 }
 
-/* TITLE + COUNT */
 .mix-card__title-row {
   display: flex;
   justify-content: space-between;
@@ -59,18 +59,120 @@
 
 .mix-card__title {
   font-size: 14px;
-  font-weight: 700;
-  color: white;
+  color: #e0e0e0;
+  font-weight: normal;
 }
 
-.mix-card__count {
-  font-size: 14px;
+.mix-card__desc {
+  font-size: 12px;
+  color: #898989;
+  margin-top: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* CARD 1 */
+.mix-card:nth-child(1) .mix-card__count {
   color: #ce6e9a;
 }
+.mix-card:nth-child(1) .mix-card__art::before {
+  background: #ce6e9a;
+  opacity: 0.3;
+}
+.mix-card:nth-child(1) .mix-card__art::after {
+  background: #ce6e9a;
+  opacity: 0.15;
+}
 
-/* DESCRIPTION */
-.mix-card__desc {
-  font-size: 13px;
-  color: #b3b3b3;
-  margin-top: 4px;
+/* CARD 2 */
+.mix-card:nth-child(2) .mix-card__count {
+  color: #50e3c2;
+}
+.mix-card:nth-child(2) .mix-card__art::before {
+  background: #50e3c2;
+  opacity: 0.3;
+}
+.mix-card:nth-child(2) .mix-card__art::after {
+  background: #50e3c2;
+  opacity: 0.15;
+}
+
+/* CARD 3 */
+.mix-card:nth-child(3) .mix-card__count {
+  color: #f4b8bd;
+}
+.mix-card:nth-child(3) .mix-card__art::before {
+  background: #f4b8bd;
+  opacity: 0.3;
+}
+.mix-card:nth-child(3) .mix-card__art::after {
+  background: #f4b8bd;
+  opacity: 0.15;
+}
+
+/* CARD 4 */
+.mix-card:nth-child(4) .mix-card__count {
+  color: #c3e7b7;
+}
+.mix-card:nth-child(4) .mix-card__art::before {
+  background: #c3e7b7;
+  opacity: 0.3;
+}
+.mix-card:nth-child(4) .mix-card__art::after {
+  background: #c3e7b7;
+  opacity: 0.15;
+}
+
+/* CARD 5 */
+.mix-card:nth-child(5) .mix-card__count {
+  color: #f37fa6;
+}
+.mix-card:nth-child(5) .mix-card__art::before {
+  background: #f37fa6;
+  opacity: 0.3;
+}
+.mix-card:nth-child(5) .mix-card__art::after {
+  background: #f37fa6;
+  opacity: 0.15;
+}
+
+/* CARD 6 */
+.mix-card:nth-child(6) .mix-card__count {
+  color: #a0bec8;
+}
+.mix-card:nth-child(6) .mix-card__art::before {
+  background: #a0bec8;
+  opacity: 0.3;
+}
+.mix-card:nth-child(6) .mix-card__art::after {
+  background: #a0bec8;
+  opacity: 0.15;
+}
+
+/* CARD 7 */
+.mix-card:nth-child(7) .mix-card__count {
+  color: #fdd87d;
+}
+.mix-card:nth-child(7) .mix-card__art::before {
+  background: #fdd87d;
+  opacity: 0.3;
+}
+.mix-card:nth-child(7) .mix-card__art::after {
+  background: #fdd87d;
+  opacity: 0.15;
+}
+
+/* CARD 8 */
+.mix-card:nth-child(8) .mix-card__count {
+  color: #d4b2a9;
+}
+.mix-card:nth-child(8) .mix-card__art::before {
+  background: #d4b2a9;
+  opacity: 0.3;
+}
+.mix-card:nth-child(8) .mix-card__art::after {
+  background: #d4b2a9;
+  opacity: 0.15;
 }

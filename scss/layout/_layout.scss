@@ -22,11 +22,10 @@ aside.sidebar {
 
 header {
   grid-area: header;
-  background-color: green;
+  background-color: #060606;
   display: flex;
   align-items: center;
   padding: $spacing-lg;
-  height: 100px;
 }
 
 .main-content {
