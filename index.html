@@ -121,7 +121,96 @@
         </nav>
       </aside>
 
-      <header class="site-header"></header>
+      <header class="site-header">
+        <nav class="header-content">
+          <a href="#" class="nav-items">
+            <img src="./assets/icons/home.png" alt="Home icon" />
+            <span class="active">Home</span>
+          </a>
+          <a href="#" class="nav-items">
+            <img src="./assets/icons/discovery.png" alt="Discover icon" />
+            <span>Discover</span>
+          </a>
+          <a href="#" class="nav-items">
+            <img src="./assets/icons/search.png" alt="Search icon" />
+            <span>Search</span>
+          </a>
+        </nav>
+        <div class="header-actions">
+          <img src="./assets/icons/notification.png" alt="Notification icon">
+          <img src="./assets/icons/lock.png" alt="lock icon"/>
+          <button class="contact-btn">
+            <img src="./assets/icons/contacts.png" alt="friends icon"/>
+          </button>
+                   
+          <img src="./assets/icons/settings.png" alt="settings icon">
+          <img src="./assets/icons/profile.png" alt="user profile icon"/>
+        </div>
+      </header>
+      <aside class="toggledbar">
+        <div class="friends-activity">
+           <h3>Friends Activity</h3>
+            <div class="toggled-right">
+              <img src="./assets/icons/Name=Add Friend, Filled=No.png" alt="add friend icon"/>
+              <img src="./assets/icons/Name=Close, Filled=No.png" alt="close icon"/>
+            </div>            
+        </div>
+        <div class="friends-list">
+          <div class="friends-listening">
+            <img src="./assets/icons/friend4.png" class="logo" alt="friend profile picture"/>
+            <div class="friends-info">
+              <h5>FriendlyMusicListener</h5>
+              <div class="friends-playlist">
+                  <img src="./assets/icons/musicicon.png" alt="icon">
+                  <span><strong>Goosebumps</strong></span>
+                  <img src="./assets/icons/Ellipse 27.png" alt="dot"/>
+                  <span><strong>Travis Scott</strong></span>
+              </div>
+            </div>
+          </div>
+
+            <div class="friends-listening">
+              <img src="./assets/icons/friend1.png" class="logo" alt="friend profile picture"/>
+              <div class="friends-info">
+                <h5>AverageMusicEnjoyer</h5>
+                <div class="friends-playlist">
+                    <img src="./assets/icons/musicicon.png" alt="icon">
+                    <span><strong>Get Lucky</strong></span>
+                    <img src="./assets/icons/Ellipse 27.png" alt="dot"/>
+                    <span><strong>Daft Punk</strong></span>
+              </div>
+            </div>
+          </div>
+
+            <div class="friends-listening">
+              <img src="./assets/icons/friend2.png" class="logo" alt="friend profile picture"/>
+              <div class="friends-info">
+                <h5>MusicEnthusiast</h5>
+                <div class="friends-playlist">
+                    <img src="./assets/icons/musicicon.png" class="logo" alt="icon">
+                    <span><strong>would he</strong></span>
+                    <img src="./assets/icons/Ellipse 27.png" alt="dot"/>
+                    <span><strong>joji</strong></span>
+                </div>
+              </div>
+           </div>
+
+            <div class="friends-listening">
+              <img src="./assets/icons/friend3.png" class="logo" alt="friend profile picture"/>
+                <div class="friends-info">
+                  <h5>FriendlyMusicListener</h5>
+                  <div class="friends-playlist">
+                      <img src="./assets/icons/musicicon.png" alt="icon">
+                      <span><strong>Rockstar</strong></span>
+                      <img src="./assets/icons/Ellipse 27.png" alt="dot"/>
+                      <span><strong>Post Malone</strong></span>
+                  </div>
+                </div>
+          </div>
+        </div>       
+      </aside>
+
+
 
       <main class="main-content">
         <nav class="filters">
@@ -390,6 +479,18 @@
       </main>
       <footer class="player"></footer>
     </div>
+    <script>
+      const contactBtn = document.querySelector('.contact-btn');
+      const toggledBar = document.querySelector('.toggledbar');
+      const closeBtn = document.querySelector('.toggled-right img:nth-child(2)');
+
+      contactBtn.addEventListener('click', () => {
+        toggledBar.classList.toggle('toggledbar--active');
+      });
+      closeBtn.addEventListener('click', () => {
+        toggledBar.classList.remove('toggledbar--active');
+      });
+    </script>
     <!-- BOTTOM PLAYER (fixed) -->
   </body>
 </html>
