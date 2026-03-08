@@ -19,7 +19,7 @@
                   src="./assets/icons/Library.png"
                   alt=""
                 />
-                <span>Library</span>
+                <span>My Library</span>
               </a>
             </li>
 
@@ -251,7 +251,7 @@
 ===================== -->
         <section class="mobile-shortcuts">
           <a href="#" class="mobile-shortcut">
-            <img src="./assets/images/daftpankxxs.png" alt="Get Lucky cover"/>
+            <img src="./assets/images/daftpankxxs.png" alt="Get Lucky cover" />
             <div class="mobile-shortcut-info">
               <span>Get Lucky (feat. ...</span>
               <span>Daft Punk</span>
@@ -264,12 +264,12 @@
           </a>
 
           <a href="#" class="mobile-shortcut">
-            <img src="./assets/images/linkinpark.png" alt="Daily Mix 1 cover"/>
+            <img src="./assets/images/linkinpark.png" alt="Daily Mix 1 cover" />
             <span>Daily Mix 1</span>
           </a>
 
-           <a href="#" class="mobile-shortcut">
-            <img src="./assets/images/daftpankxxs.png" alt="Get Lucky cover"/>
+          <a href="#" class="mobile-shortcut">
+            <img src="./assets/images/daftpankxxs.png" alt="Get Lucky cover" />
             <div class="mobile-shortcut-info">
               <span>Instant Crush</span>
               <span>Daft Punk</span>
@@ -277,7 +277,10 @@
           </a>
 
           <a href="#" class="mobile-shortcut">
-            <img src="./assets/images/daftpankxxs.png" alt="Around The World cover"/>
+            <img
+              src="./assets/images/daftpankxxs.png"
+              alt="Around The World cover"
+            />
             <div class="mobile-shortcut-info">
               <span>Around the World</span>
               <span>Daft Punk</span>
@@ -590,8 +593,11 @@
 ===================== -->
       <section class="mobile-player">
         <div class="mobile-player__track">
-          <img class="mobile-player__cover"
-            src="./assets/images/daftpankxxs.png" alt="Get Lucky cover"/>
+          <img
+            class="mobile-player__cover"
+            src="./assets/images/daftpankxxs.png"
+            alt="Get Lucky cover"
+          />
           <div class="mobile-player__info">
             <h4>Get Lucky (feat. Pharrell Williams...)</h4>
             <p>Daft Punk</p>
@@ -621,11 +627,11 @@
    Mobile Bottom Navigation
 ===================== -->
       <nav class="mobile-bottom-nav" aria-label="Mobile navigation">
-        <a
-          href="#"
-          class="mobile-bottom-nav__item"
-        >
-          <img src="./assets/icons/Name=Home, Filled=Yes (1).png" alt="Home icon" />
+        <a href="#" class="mobile-bottom-nav__item">
+          <img
+            src="./assets/icons/Name=Home, Filled=Yes (1).png"
+            alt="Home icon"
+          />
           <span>Home</span>
         </a>
 
@@ -645,11 +651,90 @@
         </a>
 
         <a href="#" class="mobile-bottom-nav__item">
-          <img src="./assets/icons/Name=User, Filled=No.png" alt="Profile icon" />
+          <img
+            src="./assets/icons/Name=User, Filled=No.png"
+            alt="Profile icon"
+          />
           <span>Me</span>
         </a>
       </nav>
-      <footer class="player"></footer>
+      <footer class="player">
+        <div class="player-left">
+          <button class="play-btn">
+            <img src="./assets/icons/play.png" alt="play" />
+          </button>
+
+          <button class="icon-btn">
+            <img src="./assets/icons/prev.png" alt="prev" />
+          </button>
+
+          <button class="icon-btn">
+            <img src="./assets/icons/next.png" alt="next" />
+          </button>
+
+          <button class="icon-btn">
+            <img src="./assets/icons/shuffle.png" alt="shuffle" />
+          </button>
+
+          <button class="icon-btn">
+            <img src="./assets/icons/repeat.png" alt="repeat" />
+          </button>
+
+          <span class="time">2:23</span>
+
+          <div class="progress">
+            <div class="progress-fill"></div>
+          </div>
+
+          <span class="time">4:45</span>
+
+          <button class="icon-btn">
+            <img src="./assets/icons/volume.png" alt="volume" />
+          </button>
+        </div>
+
+        <div class="player-song">
+          <img class="song-cover" src="./assets/images/image.png" alt="cover" />
+
+          <div class="song-info">
+            <h4>Get Lucky</h4>
+            <p>Daft Punk</p>
+            <span>Random Access Memories</span>
+          </div>
+        </div>
+
+        <div class="player-right">
+          <button class="icon-btn">
+            <img src="./assets/icons/like.png" alt="heart" />
+          </button>
+
+          <button class="icon-btn">
+            <img src="./assets/icons/add.png" alt="add" />
+          </button>
+
+          <button class="icon-btn">
+            <img src="./assets/icons/queue.png" alt="queue" />
+          </button>
+
+          <button class="icon-btn">
+            <img src="./assets/icons/device.png" alt="device" />
+          </button>
+
+          <button class="icon-btn">
+            <img src="./assets/icons/more.png" alt="more" />
+          </button>
+
+          <div class="divider"></div>
+
+          <button class="blue-btn">
+            <img src="./assets/icons/blue.png" alt="blue" />
+          </button>
+
+          <button class="icon-btn">
+            <img src="./assets/icons/menu.png" alt="menu" />
+          </button>
+        </div>
+      </footer>
     </div>
     <script>
       const contactBtn = document.querySelector(".contact-btn");
