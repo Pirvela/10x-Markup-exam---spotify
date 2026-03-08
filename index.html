@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify Clone</title>
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
   </head>
   <body>
     <div class="page-wrapper">
@@ -19,7 +19,7 @@
                   src="./assets/icons/Library.png"
                   alt=""
                 />
-                <span>Library</span>
+                <span>My Library</span>
               </a>
             </li>
 
@@ -262,7 +262,7 @@
         </section>
         <section class="section">
           <div class="section-header">
-            <h2 class="section-title">Made For You</h2>
+            <h2 class="section-title">Your top mixes</h2>
             <div class="section-actions">
               <button class="section-action-btn">
                 <img
@@ -388,7 +388,83 @@
           </div>
         </section>
       </main>
-      <footer class="player"></footer>
+<footer class="player-footer">
+  <div class="player-left">
+    <button class="play-btn">
+      <img src="./assets/icons/pause.png" alt="play">
+    </button>
+
+    <button class="icon-btn">
+      <img src="./assets/icons/prev.left.png" alt="prev">
+    </button>
+
+    <button class="icon-btn">
+      <img src="./assets/icons/prev.right.png" alt="next">
+    </button>
+
+    <button class="icon-btn">
+      <img src="./assets/icons/shuffle.png" alt="shuffle">
+    </button>
+
+    <button class="icon-btn">
+      <img src="./assets/icons/repeat.png" alt="repeat">
+    </button>
+
+    <span class="time">2:23</span>
+
+    <div class="progress">
+      <div class="progress-fill"></div>
+    </div>
+
+    <span class="time">4:45</span>
+
+    <button class="icon-btn">
+      <img src="./assets/icons/volume.png" alt="volume">
+    </button>
+  </div>
+
+  <div class="player-song">
+    <img class="song-cover" src="./assets/icons/image.png" alt="cover">
+
+    <div class="song-info">
+      <h5>Get Lucky</h5>
+      <p>Daft Punk</p>
+      <p>Random Access Memories</p>
+    </div>
+  </div>
+
+  <div class="player-right">
+    <button class="icon-btn">
+      <img src="./assets/icons/Like.png" alt="heart">
+    </button>
+
+    <button class="icon-btn">
+      <img src="./assets/icons/add.png" alt="add">
+    </button>
+
+    <button class="icon-btn">
+      <img src="./assets/icons/queue.png" alt="queue">
+    </button>
+
+    <button class="icon-btn">
+      <img src="./assets/icons/device.png" alt="device">
+    </button>
+
+    <button class="icon-btn">
+      <img src="./assets/icons/more.png" alt="more">
+    </button>
+
+    <div class="divider"></div>
+
+    <button class="blue-btn">
+      <img src="./assets/icons/blue.png" alt="blue">
+    </button>
+
+    <button class="icon-btn">
+      <img src="./assets/icons/menu.png" alt="menu">
+    </button>
+  </div>
+</footer>
     </div>
     <!-- BOTTOM PLAYER (fixed) -->
   </body>
