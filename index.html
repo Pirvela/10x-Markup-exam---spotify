@@ -139,7 +139,7 @@
         <div class="header-actions">
           <img src="./assets/icons/notification.png" alt="Notification icon">
           <img src="./assets/icons/lock.png" alt="lock icon"/>
-          <button class="contact-btn">
+          <button class="contact-btn turn-white-btn">
             <img src="./assets/icons/contacts.png" alt="friends icon"/>
           </button>
                    
@@ -483,12 +483,20 @@
       const contactBtn = document.querySelector('.contact-btn');
       const toggledBar = document.querySelector('.toggledbar');
       const closeBtn = document.querySelector('.toggled-right img:nth-child(2)');
+      const turnWhiteBtn = document.querySelector('.turn-white-btn');
 
       contactBtn.addEventListener('click', () => {
         toggledBar.classList.toggle('toggledbar--active');
       });
       closeBtn.addEventListener('click', () => {
         toggledBar.classList.remove('toggledbar--active');
+      });
+      turnWhiteBtn.addEventListener('click', () => {
+        if(turnWhiteBtn.style.filter === 'brightness(0) invert(1)') {
+          turnWhiteBtn.style.filter = 'none';
+        } else {
+          turnWhiteBtn.style.filter = 'brightness(0) invert(1)';
+        }
       });
     </script>
     <!-- BOTTOM PLAYER (fixed) -->
