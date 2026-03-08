@@ -1,12 +1,12 @@
 @use "../base" as *;
 
 .section {
-  margin-bottom: $spacing-xl;
+  margin-bottom: calc($spacing-xl - 2px);
 }
 
 .section-header {
   @include flex-row(space-between, center);
-  margin-bottom: $spacing-md;
+  margin-bottom: 15px;
 }
 
 .section-title {
