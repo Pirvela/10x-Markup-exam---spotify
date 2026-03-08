@@ -19,7 +19,7 @@ aside.sidebar {
   flex-direction: column;
   padding: $spacing-lg;
 }
-.toggledbar{
+.toggledbar {
   grid-area: toggledbar;
   background-color: $color-bg-secondary;
   display: flex;
@@ -41,7 +41,6 @@ header {
   overflow-y: auto;
   padding: $spacing-md $spacing-lg;
   padding-bottom: $spacing-xl;
-  overflow: hidden;
 
   &::-webkit-scrollbar {
     width: 6px;
