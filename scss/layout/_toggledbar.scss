@@ -1,59 +1,59 @@
 @use "../base/" as *;
 
-.toggledbar{
-    width: 0;
-    visibility: hidden;
-    overflow: hidden;
+.toggledbar {
+  width: 0;
+  visibility: hidden;
+  overflow: hidden;
+  background: $color-bg-primary;
+  transition:
+    width 0.3s ease,
+    visibility 0.3s ease;
+  border: 1px solid $color-border;
+  &.toggledbar--active {
+    width: 450px;
+    visibility: visible;
+    padding: $spacing-lg;
+  }
+  .friends-activity {
+    @include flex-row(space-between, center);
+    padding: 20px;
     background: $color-bg-primary;
-    transition: width 0.3s ease, visibility 0.3s ease;
-    border: 1px solid $color-border;
-    &.toggledbar--active{
-        width: 450px;
-        visibility: visible;
+    h3 {
+      font-size: $font-size-md;
+      font-weight: $font-weight-medium;
     }
-    .friends-activity{
-        @include flex-row(space-between, center);
-        padding: 20px;
-        background: $color-bg-primary;
-        h3{
-            font-size: $font-size-md;
-            font-weight: $font-weight-medium;
-        }
-        .toggled-right{
-            @include flex-row(center, center);
-            gap: $spacing-sm;
-            img{
-                width: 42px;
-                height: 42px;
-                cursor: pointer;
-            }
-        }
-    }
-}
-
-.friends-listening{
-    @include flex-row(flex-start, center);
-    margin-bottom: 20px;
-    
-}
-.friends-listening .logo{
-    width: 40px;
-    height: 40px;
-}
-
-.friends-info h5{
-    font-size: $font-size-base;
-    font-weight: $font-weight-normal;
-    padding: 0 20px;
-
-}
-.friends-playlist{
-    @include flex-row(center, center);
-    gap: $spacing-sm;
-    margin-top: $spacing-sm;
-    img{
-        border-radius: $radius-md;
+    .toggled-right {
+      @include flex-row(center, center);
+      gap: $spacing-sm;
+      img {
+        width: 42px;
+        height: 42px;
         cursor: pointer;
+      }
     }
+  }
 }
 
+.friends-listening {
+  @include flex-row(flex-start, center);
+  margin-bottom: 20px;
+}
+.friends-listening .logo {
+  width: 40px;
+  height: 40px;
+}
+
+.friends-info h5 {
+  font-size: $font-size-base;
+  font-weight: $font-weight-normal;
+  padding: 0 20px;
+}
+.friends-playlist {
+  @include flex-row(center, center);
+  gap: $spacing-sm;
+  margin-top: $spacing-sm;
+  img {
+    border-radius: $radius-md;
+    cursor: pointer;
+  }
+}
