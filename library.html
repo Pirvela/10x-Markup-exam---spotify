@@ -13,10 +13,10 @@
         <nav class="sidebar-nav">
           <ul class="sidebar-list">
             <li class="sidebar-item">
-              <a href="./library.html">
+              <a href="#">
                 <img
                   class="sidebar-icon"
-                  src="./assets/icons/Library.png"
+                  src="./assets/icons/Frame 102.png"
                   alt=""
                 />
                 <span>My Library</span>
@@ -123,15 +123,15 @@
 
       <header class="site-header">
         <nav class="header-content">
-          <a href="" class="nav-items">
-            <img src="./assets/icons/home.png" alt="Home icon" />
-            <span class="active">Home</span>
+          <a href="index.html" class="nav-items" id="inactive-background">
+            <img src="./assets/icons/home-gray.png" alt="Home icon" />
+            <span>Home</span>
           </a>
           <a href="#" class="nav-items">
             <img src="./assets/icons/discovery.png" alt="Discover icon" />
             <span>Discover</span>
           </a>
-          <a href="search.html" class="nav-items">
+          <a href="/search.html" class="nav-items">
             <img src="./assets/icons/search.png" alt="Search icon" />
             <span>Search</span>
           </a>
@@ -237,15 +237,304 @@
       </aside>
 
       <main class="main-content">
-        <nav class="filters">
-          <button class="filter-chip filter-chip--active">All</button>
-          <button class="filter-chip">Music</button>
-          <button class="filter-chip">Podcasts</button>
-          <button class="filter-chip">Audiobooks</button>
-          <button class="filters-icon">
-            <img src="./assets/icons/filter.png" alt="filer icon" />
-          </button>
-        </nav>
+        <section class="library-view">
+          <div class="library-toolbar">
+            <div class="library-toolbar__left">
+              <button class="toolbar-btn">
+                <img
+                  src="./assets/icons/Name=List, Filled=No.png"
+                  alt="List icon"
+                />
+              </button>
+              <button class="toolbar-btn">
+                <img src="./assets/icons/icons big.png" alt="Grid icon" />
+              </button>
+              <button class="sort-btn">
+                <img
+                  src="./assets/icons/Name=Sort, Filled=No.png"
+                  alt="Sort icon"
+                /><span>Recent</span>
+              </button>
+              <button class="sort-btn">
+                <img
+                  src="./assets/icons/Name=Filter, Filled=No.png"
+                  alt="Group icon"
+                /><span>Group</span>
+              </button>
+              <button class="search-btn">
+                <img
+                  src="./assets/icons/Name=Search, Filled=No.png"
+                  alt="Search icon"
+                />
+              </button>
+            </div>
+            <button class="toolbar-plus">
+              <img
+                src="./assets/icons/Name=Add Simple, Filled=No.png"
+                alt="Add icon"
+              />
+            </button>
+          </div>
+
+          <div class="library-grid">
+            <div class="mix-card">
+              <div class="mix-card__art">
+                <img src="./assets/images/Frame 124.png" alt="Liked songs" />
+                <button class="remove-btn">
+                  <img
+                    src="./assets/icons/Name=Pin, Filled=Yes.png"
+                    alt="Pin icon"
+                  />
+                </button>
+              </div>
+              <div class="mix-card__title-row">
+                <h3 class="mix-card__title">Liked songs</h3>
+                <span class="mix-card__liked">8</span>
+              </div>
+              <p class="mix-card__desc">Numb, Crawling, In the End, and more</p>
+            </div>
+            <div class="artist-card">
+              <div class="artist-img">
+                <img src="./assets/images/davidbowie.png" alt="David Bowie" />
+                <button class="remove-btn">
+                  <img
+                    src="./assets/icons/Name=Pin, Filled=Yes.png"
+                    alt="Pin icon"
+                  />
+                </button>
+              </div>
+              <p class="artist-card__desc">David Bowie</p>
+            </div>
+            <div class="artist-card">
+              <div class="artist-img">
+                <img src="./assets/images/daft.png" alt="Daft Punk" />
+                <button class="remove-btn">
+                  <img
+                    src="./assets/icons/Name=Pin, Filled=Yes.png"
+                    alt="Pin icon"
+                  />
+                </button>
+              </div>
+              <p class="artist-card__desc">Daft Punk</p>
+            </div>
+            <div class="mix-card">
+              <div class="mix-card__art">
+                <img src="./assets/images/Frame 333.png" alt="Chill Stuff" />
+                <button class="remove-btn">
+                  <img
+                    src="./assets/icons/Name=Pin, Filled=Yes.png"
+                    alt="Pin icon"
+                  />
+                </button>
+              </div>
+              <div class="mix-card__title-row">
+                <h3 class="mix-card__title">Chill Stuff</h3>
+                <span class="mix-card__secondary">152</span>
+              </div>
+              <p class="mix-card__desc">
+                Simon and Garfunkel, Daft Punk, and more
+              </p>
+            </div>
+            <div class="mix-card">
+              <div class="mix-card__art">
+                <img src="./assets/images/Frame 333.png" alt="Junk Box" />
+                <button class="remove-btn">
+                  <img
+                    src="./assets/icons/Name=Pin, Filled=Yes.png"
+                    alt="Pin icon"
+                  />
+                </button>
+              </div>
+              <div class="mix-card__title-row">
+                <h3 class="mix-card__title">The Junk Box</h3>
+                <span class="mix-card__secondary">50</span>
+              </div>
+              <p class="mix-card__desc">
+                Simon and Garfunkel, Daft Punk, and more
+              </p>
+            </div>
+            <div class="mix-card">
+              <div class="mix-card__art">
+                <img src="./assets/images/Frame 333.png" alt="Vibe" />
+                <button class="remove-btn">
+                  <img
+                    src="./assets/icons/Name=Pin, Filled=Yes.png"
+                    alt="Pin icon"
+                  />
+                </button>
+              </div>
+              <div class="mix-card__title-row">
+                <h3 class="mix-card__title">Vibe</h3>
+                <span class="mix-card__secondary">30</span>
+              </div>
+              <p class="mix-card__desc">Blue Skies, No Heaven</p>
+            </div>
+            <div class="mix-card">
+              <div class="mix-card__art">
+                <img src="./assets/images/Frame 333.png" alt="Linkin Park" />
+                <button class="remove-btn">
+                  <img
+                    src="./assets/icons/Name=Pin, Filled=Yes.png"
+                    alt="Pin icon"
+                  />
+                </button>
+              </div>
+              <div class="mix-card__title-row">
+                <h3 class="mix-card__title">Selected Linkin...</h3>
+                <span class="mix-card__secondary">8</span>
+              </div>
+              <p class="mix-card__desc">Numb, Crawling, In the End, and more</p>
+            </div>
+            <div class="mix-card">
+              <div class="mix-card__art">
+                <img src="./assets/images/Frame 111.png" alt="Fav Bands" />
+                <button class="remove-btn">
+                  <img
+                    src="./assets/icons/Name=Pin, Filled=Yes.png"
+                    alt="Pin icon"
+                  />
+                </button>
+              </div>
+              <div class="mix-card__title-row">
+                <h3 class="mix-card__title">Fav bands</h3>
+                <span class="mix-card__secondary">6</span>
+              </div>
+              <p class="mix-card__desc">Linkin Park, Muse, and more</p>
+            </div>
+            <div class="mix-card">
+              <div class="mix-card__art">
+                <img src="./assets/images/meteoraframe.png" alt="Linkin Park" />
+                <button class="remove-btn">
+                  <img
+                    src="./assets/icons/Name=Pin, Filled=Yes.png"
+                    alt="Pin icon"
+                  />
+                </button>
+              </div>
+              <div class="mix-card__title-row">
+                <h3 class="mix-card__title">Meteora</h3>
+              </div>
+              <p class="mix-card__desc">Linkin Park</p>
+            </div>
+            <div class="mix-card">
+              <div class="mix-card__art">
+                <img src="./assets/images/daftpunkframe.png" alt="Daft Punk" />
+                <button class="remove-btn">
+                  <img
+                    src="./assets/icons/Name=Pin, Filled=Yes.png"
+                    alt="Pin icon"
+                  />
+                </button>
+              </div>
+              <div class="mix-card__title-row">
+                <h3 class="mix-card__title">Random Access...</h3>
+                <span class="mix-card__secondary">13</span>
+              </div>
+              <p class="mix-card__desc">Daft Punk</p>
+            </div>
+            <div class="mix-card">
+              <div class="mix-card__art">
+                <img src="./assets/images/beatlesframe.png" alt="The Beatles" />
+              </div>
+              <div class="mix-card__title-row">
+                <h3 class="mix-card__title">Abbey Road</h3>
+                <span class="mix-card__secondary">13</span>
+              </div>
+              <p class="mix-card__desc">The Beatles</p>
+            </div>
+            <div class="mix-card">
+              <div class="mix-card__art">
+                <img src="./assets/images/museframe.png" alt="Muse" />
+              </div>
+              <div class="mix-card__title-row">
+                <h3 class="mix-card__title">Black Holes and...</h3>
+                <span class="mix-card__secondary">13</span>
+              </div>
+              <p class="mix-card__desc">Muse</p>
+            </div>
+            <div class="mix-card">
+              <div class="mix-card__art">
+                <img
+                  src="./assets/images/linkinparkframe.png"
+                  alt="Linkin Park"
+                />
+              </div>
+              <div class="mix-card__title-row">
+                <h3 class="mix-card__title">Daily Mix 1</h3>
+                <span class="mix-card__count-lightblue">50</span>
+              </div>
+              <p class="mix-card__desc">
+                Linkin Park, System Of A Down, Coal Chamber...
+              </p>
+            </div>
+            <div class="mix-card">
+              <div class="mix-card__art">
+                <img
+                  src="./assets/images/dailymixframe.png"
+                  alt="Daily Mix 2"
+                />
+              </div>
+              <div class="mix-card__title-row">
+                <h3 class="mix-card__title">Daily Mix 2</h3>
+                <span class="mix-card__count-red">50</span>
+              </div>
+              <p class="mix-card__desc">
+                Avril Lavigne, Lorde, Charli XCX and more.
+              </p>
+            </div>
+            <div class="mix-card">
+              <div class="mix-card__art">
+                <img
+                  src="./assets/images/dailymix2frame.png"
+                  alt="Daily Mix 3"
+                />
+              </div>
+              <div class="mix-card__title-row">
+                <h3 class="mix-card__title">Daily Mix 3</h3>
+                <span class="mix-card__count-green">50</span>
+              </div>
+              <p class="mix-card__desc">
+                The Strokes, Martin Garrix, MGMT and more
+              </p>
+            </div>
+            <div class="mix-card">
+              <div class="mix-card__art">
+                <img src="./assets/images/rhcpframe.png" alt="Daily Mix 3" />
+              </div>
+              <div class="mix-card__title-row">
+                <h3 class="mix-card__title">Daily Mix 3</h3>
+                <span class="mix-card__count-lime">50</span>
+              </div>
+              <p class="mix-card__desc">
+                The Strokes, Martin Garrix, MGMT and more
+              </p>
+            </div>
+            <div class="mix-card">
+              <div class="mix-card__art">
+                <img src="./assets/images/mfdoomframe.png" alt="Daily Mix 3" />
+              </div>
+              <div class="mix-card__title-row">
+                <h3 class="mix-card__title">Daily Mix 3</h3>
+                <span class="mix-card__count-yellow">50</span>
+              </div>
+              <p class="mix-card__desc">
+                The Strokes, Martin Garrix, MGMT and more
+              </p>
+            </div>
+            <div class="mix-card">
+              <div class="mix-card__art">
+                <img src="./assets/images/marleyframe.png" alt="Daily Mix 3" />
+              </div>
+              <div class="mix-card__title-row">
+                <h3 class="mix-card__title">Daily Mix 3</h3>
+                <span class="mix-card__count-brightblue">50</span>
+              </div>
+              <p class="mix-card__desc">
+                The Strokes, Martin Garrix, MGMT and more
+              </p>
+            </div>
+          </div>
+        </section>
         <!-- =====================
    Mobile Quick Picks
 ===================== -->
@@ -292,301 +581,6 @@
             <span>Rock Mix</span>
           </a>
         </section>
-        <section class="section">
-          <div class="section-header">
-            <h2 class="section-title">Made For You</h2>
-            <div class="section-actions">
-              <button class="section-action-btn">
-                <img
-                  src="./assets/icons/Name=Arrow-Left, Filled=No.png"
-                  alt="Left arrow icon"
-                />
-              </button>
-              <button class="section-action-btn">
-                <img
-                  src="./assets/icons/Name=Arrow-Right, Filled=No.png"
-                  alt="Right arrow icon "
-                />
-              </button>
-              <button class="section-action-btn">
-                <img
-                  src="./assets/icons/Name=More, Filled=No.png"
-                  alt="More options icon"
-                />
-              </button>
-            </div>
-          </div>
-          <div class="mix-grid mix-grid--made-for-you">
-            <div class="mix-card">
-              <div class="mix-card__art">
-                <img
-                  src="./assets/images/discoverweekly.png"
-                  alt="Discover Weekly"
-                />
-              </div>
-              <div class="mix-card__title-row">
-                <h3 class="mix-card__title">Discover Weekly</h3>
-                <span class="mix-card__count">50</span>
-              </div>
-              <p class="mix-card__desc">Your weekly mixtape of fresh music.</p>
-            </div>
-            <div class="mix-card">
-              <div class="mix-card__art">
-                <img src="./assets/images/linkinpark.png" alt="Linkin Park" />
-              </div>
-              <div class="mix-card__title-row">
-                <h3 class="mix-card__title">Daily Mix 1</h3>
-                <span class="mix-card__count">50</span>
-              </div>
-              <p class="mix-card__desc">
-                Linkin Park, System Of A Down, Coal Chamber...
-              </p>
-            </div>
-            <div class="mix-card">
-              <div class="mix-card__art">
-                <img src="./assets/images/dailymix2.png" alt="Daily Mix 2" />
-              </div>
-              <div class="mix-card__title-row">
-                <h3 class="mix-card__title">Daily Mix 2</h3>
-                <span class="mix-card__count">50</span>
-              </div>
-              <p class="mix-card__desc">
-                Avril Lavigne, Lorde, Charli XCX and more.
-              </p>
-            </div>
-            <div class="mix-card">
-              <div class="mix-card__art">
-                <img src="./assets/images/dailymix3.png" alt="Daily Mix 3" />
-              </div>
-              <div class="mix-card__title-row">
-                <h3 class="mix-card__title">Daily Mix 3</h3>
-                <span class="mix-card__count">50</span>
-              </div>
-              <p class="mix-card__desc">
-                The Strokes, Martin Garrix, MGMT and more
-              </p>
-            </div>
-            <div class="mix-card">
-              <div class="mix-card__art">
-                <img src="./assets/images/dailymix4.png" alt="Daily Mix 4" />
-              </div>
-              <div class="mix-card__title-row">
-                <h3 class="mix-card__title">Daily Mix 4</h3>
-                <span class="mix-card__count">50</span>
-              </div>
-              <p class="mix-card__desc">
-                Chuck Berry, Elvis Presley, Roy Orbison and more
-              </p>
-            </div>
-            <div class="mix-card">
-              <div class="mix-card__art">
-                <img
-                  src="./assets/images/franksinatramix.png"
-                  alt="Daily Mix 5"
-                />
-              </div>
-              <div class="mix-card__title-row">
-                <h3 class="mix-card__title">Daily Mix 5</h3>
-                <span class="mix-card__count">50</span>
-              </div>
-              <p class="mix-card__desc">
-                Frank Sinatra, Gerhard Trede, Dean Martin and more
-              </p>
-            </div>
-            <div class="mix-card">
-              <div class="mix-card__art">
-                <img src="./assets/images/nirvana.png" alt="Nirvana" />
-              </div>
-              <div class="mix-card__title-row">
-                <h3 class="mix-card__title">Nirvana Radio</h3>
-                <span class="mix-card__count">50</span>
-              </div>
-              <p class="mix-card__desc">
-                The Strokes, Martin Garrix, MGMT and more
-              </p>
-            </div>
-            <div class="mix-card">
-              <div class="mix-card__art">
-                <img src="./assets/images/falloutboy.png" alt="Fall Out Boy" />
-              </div>
-              <div class="mix-card__title-row">
-                <h3 class="mix-card__title">Fall Out Boy Ra...</h3>
-                <span class="mix-card__count">50</span>
-              </div>
-              <p class="mix-card__desc">
-                With Panic! At The Disco, The All-American Rejects,...
-              </p>
-            </div>
-          </div>
-        </section>
-        <section class="section">
-          <div class="section-header">
-            <h2 class="section-title">Your top mixes</h2>
-            <div class="section-actions">
-              <button class="section-action-btn">
-                <img
-                  src="./assets/icons/Name=Arrow-Left, Filled=No.png"
-                  alt="Left arrow icon"
-                />
-              </button>
-              <button class="section-action-btn">
-                <img
-                  src="./assets/icons/Name=Arrow-Right, Filled=No.png"
-                  alt="Right arrow icon "
-                />
-              </button>
-              <button class="section-action-btn">
-                <img
-                  src="./assets/icons/Name=More, Filled=No.png"
-                  alt="More options icon"
-                />
-              </button>
-            </div>
-          </div>
-          <div class="mix-grid mix-grid--top-mixes">
-            <div class="mix-card">
-              <div class="mix-card__art">
-                <img src="./assets/images/rhcp.png" alt="Rock Mix" />
-              </div>
-              <div class="mix-card__title-row">
-                <h3 class="mix-card__title">Rock Mix</h3>
-                <span class="mix-card__count">50</span>
-              </div>
-              <p class="mix-card__desc">
-                Red Hot Chili Peppers, R.E.M., Guns N’ Roses...
-              </p>
-            </div>
-            <div class="mix-card">
-              <div class="mix-card__art">
-                <img src="./assets/images/mfdoom.png" alt="MF DOOM" />
-              </div>
-              <div class="mix-card__title-row">
-                <h3 class="mix-card__title">Chill Mix</h3>
-                <span class="mix-card__count">50</span>
-              </div>
-              <p class="mix-card__desc">
-                MF DOOM, Daft Punk, The Chainsmokers, and more
-              </p>
-            </div>
-            <div class="mix-card">
-              <div class="mix-card__art">
-                <img src="./assets/images/marley.png" alt="Pop Mix" />
-              </div>
-              <div class="mix-card__title-row">
-                <h3 class="mix-card__title">Pop Mix</h3>
-                <span class="mix-card__count">50</span>
-              </div>
-              <p class="mix-card__desc">
-                Red Hot Chili Peppers, R.E.M., Guns N’ Roses...
-              </p>
-            </div>
-            <div class="mix-card">
-              <div class="mix-card__art">
-                <img src="./assets/images/daftp.png" alt="Daft Punk Mix" />
-              </div>
-              <div class="mix-card__title-row">
-                <h3 class="mix-card__title">Daft Punk Mix</h3>
-                <span class="mix-card__count">50</span>
-              </div>
-              <p class="mix-card__desc">Daft Punk, MGMT, Muse, and more</p>
-            </div>
-            <div class="mix-card">
-              <div class="mix-card__art">
-                <img src="./assets/images/90s.png" alt="Happy Mix" />
-              </div>
-              <div class="mix-card__title-row">
-                <h3 class="mix-card__title">Happy Mix</h3>
-                <span class="mix-card__count">50</span>
-              </div>
-              <p class="mix-card__desc">
-                The Turtles, Van Morrison, ABBA and more
-              </p>
-            </div>
-            <div class="mix-card">
-              <div class="mix-card__art">
-                <img src="./assets/images/bowievol2.png" alt="Daily Mix 5" />
-              </div>
-              <div class="mix-card__title-row">
-                <h3 class="mix-card__title">David Bowie Mix</h3>
-                <span class="mix-card__count">50</span>
-              </div>
-              <p class="mix-card__desc">Soft Cell, The Who and The Clash</p>
-            </div>
-            <div class="mix-card">
-              <div class="mix-card__art">
-                <img src="./assets/images/damn.png" alt="Diamond" />
-              </div>
-              <div class="mix-card__title-row">
-                <h3 class="mix-card__title">Upbeat Mix</h3>
-                <span class="mix-card__count">50</span>
-              </div>
-              <p class="mix-card__desc">
-                Kylie Minogue, Charli XCX, Cage The Elephant and...
-              </p>
-            </div>
-            <div class="mix-card">
-              <div class="mix-card__art">
-                <img src="./assets/images/60smix.png" alt="60s" />
-              </div>
-              <div class="mix-card__title-row">
-                <h3 class="mix-card__title">60s Mix</h3>
-                <span class="mix-card__count">50</span>
-              </div>
-              <p class="mix-card__desc">
-                Chuck Berry, Skeeter David, Van Morrison and...
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="section-header">
-            <h2 class="section-title">Your favorite artists</h2>
-            <div class="section-actions">
-              <button class="section-action-btn">
-                <img
-                  src="./assets/icons/Name=Arrow-Left, Filled=No.png"
-                  alt="Left arrow icon"
-                />
-              </button>
-              <button class="section-action-btn">
-                <img
-                  src="./assets/icons/Name=Arrow-Right, Filled=No.png"
-                  alt="Right arrow icon "
-                />
-              </button>
-              <button class="section-action-btn">
-                <img
-                  src="./assets/icons/Name=More, Filled=No.png"
-                  alt="More options icon"
-                />
-              </button>
-            </div>
-          </div>
-          <div class="mix-grid">
-            <div class="artist-card">
-              <div class="artist-img">
-                <img src="./assets/images/gunsnroses.png" alt="Guns N' Roses" />
-                <button class="remove-btn">×</button>
-              </div>
-              <p class="artist-card__desc">Guns N' Roses</p>
-            </div>
-            <div class="artist-card">
-              <div class="artist-img">
-                <img src="./assets/images/daft.png" alt="Daft Punk" />
-                <button class="remove-btn">×</button>
-              </div>
-              <p class="artist-card__desc">Daft Punk</p>
-            </div>
-            <div class="artist-card">
-              <div class="artist-img">
-                <img src="./assets/images/davidbowie.png" alt="David Bowie" />
-                <button class="remove-btn">×</button>
-              </div>
-              <p class="artist-card__desc">David Bowie</p>
-            </div>
-          </div>
-        </section>
       </main>
       <!-- =====================
    Mobile Mini Player
@@ -627,7 +621,7 @@
    Mobile Bottom Navigation
 ===================== -->
       <nav class="mobile-bottom-nav" aria-label="Mobile navigation">
-        <a href="#" class="mobile-bottom-nav__item">
+        <a href="/index.html" class="mobile-bottom-nav__item">
           <img
             src="./assets/icons/Name=Home, Filled=Yes (1).png"
             alt="Home icon"
@@ -640,7 +634,7 @@
           <span>Discover</span>
         </a>
 
-        <a href="#" class="mobile-bottom-nav__item">
+        <a href="/search.html" class="mobile-bottom-nav__item">
           <img src="./assets/icons/search.png" alt="Search icon" />
           <span>Search</span>
         </a>
