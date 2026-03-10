@@ -5,7 +5,7 @@
     height: $header-height;
     padding: 0 $spacing-lg;
     background: $color-bg-primary;
-    border-bottom: 1px solid $color-border;
+    margin-top: 6px;
 }
 
 .header-content{
@@ -24,6 +24,9 @@
     color: $color-text-secondary;
     text-decoration: none;
     width: $nav-width-normal;
+    &:nth-child(1){
+        background-color: $color-bg-secondary;
+    }
     &:nth-child(3){
         width: $nav-width-medium;
     }
@@ -32,6 +35,14 @@
 .nav-items .active{
     color: #fff;
 }
+
+#active-background{
+    background-color: $color-bg-secondary;
+}
+#inactive-background{
+    background-color: $color-bg-primary;
+}
+
 
 .header-actions{
     @include flex-row(flex-end, center);
