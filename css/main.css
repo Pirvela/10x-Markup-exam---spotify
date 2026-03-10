@@ -836,8 +836,8 @@ footer {
 
 .player {
   position: fixed;
-  left: var(--sidebar-width);
-  right: 0;
+  left: 250px;
+  right: 20px;
   bottom: 10px;
   height: 81px;
   padding: 0 20px;
