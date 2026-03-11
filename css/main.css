@@ -1124,6 +1124,10 @@ footer {
   gap: 4px;
 }
 
+.img-opacity {
+  opacity: 0.5;
+}
+
 .section-action-btn {
   width: 40px;
   height: 40px;

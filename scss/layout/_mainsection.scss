@@ -19,6 +19,9 @@
   @include flex-row(flex-end, center);
   gap: $spacing-xs;
 }
+.img-opacity {
+  opacity: 0.5;
+}
 
 .section-action-btn {
   @include square(40px);
