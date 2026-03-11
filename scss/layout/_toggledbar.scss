@@ -46,7 +46,6 @@
 .friends-info h5 {
   font-size: $font-size-base;
   font-weight: $font-weight-normal;
-  padding: 0 20px;
 }
 .friends-playlist {
   @include flex-row(flex-start, center);
