@@ -74,7 +74,30 @@
     margin-left: auto;
     flex: 0 0 auto;
   }
+  .white-theme {
+    background-color: #ffffff;
+    h2, h3, p, span {
+      color: #000;
+    }
+  }
+  .white-theme .mobile-shortcut{
+    background-color: #E4E4E4;
+  }
+   .white-theme .mobile-shortcut span{
+    color: #000;
+   }
+  .white-theme .mobile-player {
+    background: #AAB3C6;
+    color: #000;
+  }
+    .white-theme .mobile-player__info h4{
+      color: #000;
+    }
 
+  .white-theme .filters button{
+    background-color: #E4E4E4;
+    color: #000;
+  }
   .mobile-shortcuts {
     display: grid;
     grid-template-columns: 1fr 1fr;
