@@ -2,21 +2,16 @@
 
 .player {
   position: fixed;
-
-  left: var(--sidebar-width);
-  right: 0;
-  bottom: 10px;
-
+  left: 250px;
+  right: 20px;
+  bottom: 5px;
   height: 81px;
-  padding: 0 20px;
-
+  padding: 0px 15px;
   background: #333842;
   border-radius: 10px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   z-index: 100;
 }
 
