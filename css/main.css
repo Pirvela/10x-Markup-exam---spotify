@@ -1286,13 +1286,13 @@ footer {
     min-height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
+    background-color: #111111;
   }
   .page-wrapper {
     display: block;
     min-height: 100vh;
     height: auto;
     overflow: visible;
-    background-color: #111111;
   }
   .sidebar,
   .toggledbar,

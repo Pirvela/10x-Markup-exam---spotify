@@ -17,6 +17,7 @@
     min-height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
+    background-color: $color-bg-secondary;
   }
 
   .page-wrapper {
@@ -24,7 +25,6 @@
     min-height: 100vh;
     height: auto;
     overflow: visible;
-    background-color: $color-bg-secondary;
   }
 
   .sidebar,
