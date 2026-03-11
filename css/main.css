@@ -607,7 +607,7 @@ button {
 .discover-content img {
   position: absolute;
   top: 61px;
-  left: 78px;
+  left: 83px;
 }
 
 .genres-content {
@@ -641,7 +641,7 @@ button {
 .genres-content .square img {
   position: absolute;
   top: 61px;
-  left: 78px;
+  left: 83px;
 }
 
 .genres-content .square:nth-child(1) {
@@ -1236,6 +1236,7 @@ footer {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  gap: 10px;
   margin-bottom: 20px;
 }
 
@@ -1247,20 +1248,25 @@ footer {
 .friends-info h5 {
   font-size: 14px;
   font-weight: 400;
-  padding: 0 20px;
 }
 
 .friends-playlist {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 8px;
   margin-top: 8px;
 }
-.friends-playlist img {
-  border-radius: 8px;
-  cursor: pointer;
+
+.friends-playlist span:nth-child(1) {
+  font-size: 16px;
+  color: #898989;
+}
+
+.friends-playlist span:nth-child(4) {
+  font-size: 13px;
+  color: #898989;
 }
 
 .mobile-shortcuts,
@@ -1342,6 +1348,29 @@ footer {
   .filters-icon {
     margin-left: auto;
     flex: 0 0 auto;
+  }
+  .white-theme {
+    background-color: #ffffff;
+  }
+  .white-theme h2, .white-theme h3, .white-theme p, .white-theme span {
+    color: #000;
+  }
+  .white-theme .mobile-shortcut {
+    background-color: #E4E4E4;
+  }
+  .white-theme .mobile-shortcut span {
+    color: #000;
+  }
+  .white-theme .mobile-player {
+    background: #AAB3C6;
+    color: #000;
+  }
+  .white-theme .mobile-player__info h4 {
+    color: #000;
+  }
+  .white-theme .filters button {
+    background-color: #E4E4E4;
+    color: #000;
   }
   .mobile-shortcuts {
     display: grid;

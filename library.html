@@ -760,10 +760,9 @@
     <script>
       const contactBtn = document.querySelector(".contact-btn");
       const toggledBar = document.querySelector(".toggledbar");
-      const closeBtn = document.querySelector(
-        ".toggled-right img:nth-child(2)",
-      );
+      const closeBtn = document.querySelector(".toggled-right img:nth-child(2)");
       const turnWhiteBtn = document.querySelector(".turn-white-btn");
+      const whiteThemeBtn = document.querySelector(".white-theme-btn");
 
       contactBtn.addEventListener("click", () => {
         toggledBar.classList.toggle("toggledbar--active");
@@ -777,6 +776,9 @@
         } else {
           turnWhiteBtn.style.filter = "brightness(0) invert(1)";
         }
+      });
+      whiteThemeBtn.addEventListener("click", () => {
+        document.body.classList.toggle("white-theme-btn");
       });
     </script>
     <!-- BOTTOM PLAYER (fixed) -->
