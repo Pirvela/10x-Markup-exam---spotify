@@ -238,6 +238,40 @@
 
       <main class="main-content">
         <section class="library-view">
+          <div class="mobile-search-top">
+            <div class="mobile-search-bar">
+              <input type="text" placeholder="Search library?" />
+              <img
+                src="./assets/icons/Name=Search, Filled=No.png"
+                alt="search icon"
+              />
+            </div>
+
+            <button class="mobile-camera-btn">
+              <img
+                src="./assets/icons/Name=Add Simple, Filled=No.png"
+                alt="camera icon"
+              />
+            </button>
+          </div>
+          <div class="library-toolbartwo">
+            <div class="library-toolbar__left">
+              <button class="sort-btn">
+                <img
+                  src="./assets/icons/Name=Filter, Filled=No.png"
+                  alt="Group icon"
+                /><span>Group</span>
+              </button>
+              <button class="sort-btn">
+                <span>Recent</span>
+                <img
+                  src="./assets/icons/Name=Grid, Filled=No.png"
+                  alt="Sort icon"
+                />
+              </button>
+            </div>
+          </div>
+
           <div class="library-toolbar">
             <div class="library-toolbar__left">
               <button class="toolbar-btn">
@@ -274,6 +308,47 @@
                 alt="Add icon"
               />
             </button>
+          </div>
+          <div class="library-list">
+            <div class="library-row">
+              <span>Playlists</span>
+              <img
+                src="./assets/icons/Name=Arrow-Right, Filled=No.png"
+                alt="arrow"
+              />
+            </div>
+
+            <div class="library-row">
+              <span>Playlists by Spotify</span>
+              <img
+                src="./assets/icons/Name=Arrow-Right, Filled=No.png"
+                alt="arrow"
+              />
+            </div>
+
+            <div class="library-row">
+              <span>Albums</span>
+              <img
+                src="./assets/icons/Name=Arrow-Right, Filled=No.png"
+                alt="arrow"
+              />
+            </div>
+
+            <div class="library-row">
+              <span>Folders</span>
+              <img
+                src="./assets/icons/Name=Arrow-Right, Filled=No.png"
+                alt="arrow"
+              />
+            </div>
+
+            <div class="library-row-noborder">
+              <span>Artists</span>
+              <img
+                src="./assets/icons/Name=Arrow-Right, Filled=No.png"
+                alt="arrow"
+              />
+            </div>
           </div>
 
           <div class="library-grid">
@@ -535,56 +610,8 @@
             </div>
           </div>
         </section>
-        <!-- =====================
-   Mobile Quick Picks
-===================== -->
-        <section class="mobile-shortcuts">
-          <a href="#" class="mobile-shortcut">
-            <img src="./assets/images/daftpankxxs.png" alt="Get Lucky cover" />
-            <div class="mobile-shortcut-info">
-              <span>Get Lucky (feat. ...</span>
-              <span>Daft Punk</span>
-            </div>
-          </a>
-
-          <a href="#" class="mobile-shortcut">
-            <img src="./assets/images/dailymix2.png" alt="Daily Mix 2 cover" />
-            <span>Daily Mix 2</span>
-          </a>
-
-          <a href="#" class="mobile-shortcut">
-            <img src="./assets/images/linkinpark.png" alt="Daily Mix 1 cover" />
-            <span>Daily Mix 1</span>
-          </a>
-
-          <a href="#" class="mobile-shortcut">
-            <img src="./assets/images/daftpankxxs.png" alt="Get Lucky cover" />
-            <div class="mobile-shortcut-info">
-              <span>Instant Crush</span>
-              <span>Daft Punk</span>
-            </div>
-          </a>
-
-          <a href="#" class="mobile-shortcut">
-            <img
-              src="./assets/images/daftpankxxs.png"
-              alt="Around The World cover"
-            />
-            <div class="mobile-shortcut-info">
-              <span>Around the World</span>
-              <span>Daft Punk</span>
-            </div>
-          </a>
-
-          <a href="#" class="mobile-shortcut">
-            <img src="./assets/images/rhcp.png" alt="Rock Mix cover" />
-            <span>Rock Mix</span>
-          </a>
-        </section>
       </main>
-      <!-- =====================
-   Mobile Mini Player
-===================== -->
+
       <section class="mobile-player">
         <div class="mobile-player__track">
           <img
@@ -617,15 +644,9 @@
         <div class="mobile-player__progress"></div>
       </section>
 
-      <!-- =====================
-   Mobile Bottom Navigation
-===================== -->
       <nav class="mobile-bottom-nav" aria-label="Mobile navigation">
         <a href="/index.html" class="mobile-bottom-nav__item">
-          <img
-            src="./assets/icons/Name=Home, Filled=Yes (1).png"
-            alt="Home icon"
-          />
+          <img src="./assets/icons/home-gray.png" alt="Home icon" />
           <span>Home</span>
         </a>
 
@@ -640,7 +661,10 @@
         </a>
 
         <a href="#" class="mobile-bottom-nav__item">
-          <img src="./assets/icons/Library.png" alt="Library icon" />
+          <img
+            src="./assets/icons/Name=Library, Filled=Yes.png"
+            alt="Library icon"
+          />
           <span>Library</span>
         </a>
 
@@ -703,7 +727,10 @@
           </button>
 
           <button class="icon-btn">
-            <img src="./assets/icons/add.png" alt="add" />
+            <img
+              src="./assets/icons/Name=Add to Playlist, Filled=No.png"
+              alt="add"
+            />
           </button>
 
           <button class="icon-btn">
@@ -715,7 +742,7 @@
           </button>
 
           <button class="icon-btn">
-            <img src="./assets/icons/more.png" alt="more" />
+            <img src="./assets/icons/Name=More, Filled=No.png" alt="more" />
           </button>
 
           <div class="divider"></div>
