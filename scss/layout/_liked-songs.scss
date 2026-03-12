@@ -2,12 +2,8 @@
 @use "../base/mixins" as *;
 
 .liked-main-content {
-  padding: $spacing-md;
-  padding-bottom: calc(#{$player-height} + #{$spacing-lg});
-  height: calc(100vh - #{$header-height});
-  min-height: 0;
   overflow-y: auto;
-  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .liked-songs {
