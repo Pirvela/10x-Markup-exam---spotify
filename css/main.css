@@ -1023,6 +1023,7 @@ footer {
 .sidebar {
   transform-origin: top left;
   margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .main-content {
@@ -1098,11 +1099,10 @@ footer {
   color: #fff;
 }
 
-.liked-page .sidebar {
+.inner-page .sidebar {
   background-color: #111111 !important;
   border-radius: 10px;
   margin: 8px 8px 8px 8px;
-  padding: 7px;
 }
 
 .section {
@@ -1774,8 +1774,9 @@ footer {
 
 .liked-songs {
   width: 100%;
-  max-width: 1438px;
-  margin: 0 auto;
+  max-width: 1700px;
+  margin-left: 20px;
+  margin-right: auto;
   background-color: #060606;
   border: none;
   border-radius: 8px;
@@ -1792,8 +1793,8 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  min-height: 62px;
-  padding: 0 24px;
+  min-height: 44px;
+  padding: 0 12px 0 12px;
   border-bottom: none;
 }
 .liked-songs__topbar-actions {
@@ -1816,6 +1817,7 @@ footer {
   line-height: 1;
   cursor: pointer;
   border-radius: 4px;
+  margin-left: -2px;
 }
 .liked-songs__add-btn:hover {
   background-color: #282828;
@@ -1853,22 +1855,25 @@ footer {
 }
 .liked-songs__head {
   display: grid;
-  grid-template-columns: 40px 420px 260px 110px 50px;
+  grid-template-columns: 44px 220px 290px 110px;
   align-items: center;
   column-gap: 16px;
   min-height: 42px;
   padding: 0 16px;
   border-bottom: 1px solid #1a1a1a;
   color: #898989;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 500;
 }
 .liked-songs__body {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .liked-songs__row {
   display: grid;
-  grid-template-columns: 40px 420px 260px 80px 40px;
+  grid-template-columns: 44px 220px 290px 110px;
   align-items: center;
   column-gap: 16px;
   min-height: 60px;
@@ -1895,8 +1900,8 @@ footer {
   min-width: 0;
 }
 .liked-songs__cover {
-  width: 36px;
-  height: 36px;
+  width: 51px;
+  height: 51px;
   object-fit: cover;
   border-radius: 4px;
   flex-shrink: 0;
@@ -1954,7 +1959,7 @@ footer {
   border: 0;
   background: transparent;
   cursor: pointer;
-  margin-left: 25px;
+  margin-left: 50px;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -1989,9 +1994,12 @@ footer {
     display: none;
   }
   .liked-songs__row {
-    grid-template-columns: 28px minmax(0, 1fr) 70px 36px;
-    column-gap: 8px;
-    padding: 0 8px;
+    display: grid;
+    grid-template-columns: 44px minmax(260px, 2fr) minmax(180px, 1.4fr) 110px;
+    align-items: center;
+    gap: 16px;
+    min-height: 80px;
+    padding: 32px 16px;
   }
   .liked-songs__album-name {
     display: none;

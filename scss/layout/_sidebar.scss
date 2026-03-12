@@ -13,6 +13,7 @@
 .sidebar {
   transform-origin: top left;
   margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .main-content {
@@ -94,9 +95,10 @@
   color: #fff;
 }
 
-.liked-page .sidebar {
+.inner-page .sidebar {
   background-color: #111111 !important;
   border-radius: 10px;
-   margin: 8px 8px 8px 8px;
-   padding: 7px;
+  // border-radius: 10px;
+  margin: 8px 8px 8px 8px;
+  //  padding: 7px;
 }
