@@ -26,7 +26,7 @@
 .sidebar-list {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
   margin-top: -12px;
   padding: 0;
   list-style: none;
@@ -49,7 +49,7 @@
   border-radius: 5px;
 
   font-family: "Satoshi", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
 
   color: #b3b3b3;
@@ -58,8 +58,8 @@
 
 /* ICON */
 .sidebar-icon {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
 }
 
@@ -92,4 +92,11 @@
 .sidebar-item--active > a {
   background: #2a2a2a;
   color: #fff;
+}
+
+.liked-page .sidebar {
+  background-color: #111111 !important;
+  border-radius: 10px;
+   margin: 8px 8px 8px 8px;
+   padding: 7px;
 }
