@@ -1,7 +1,7 @@
 @use "base/variables";
 @use "base/mixins";
 @use "base/reset";
-
+@use "base/fonts";
 @use "components/card";
 @use "components/filters";
 
@@ -9,3 +9,7 @@
 @use "layout/layout";
 @use "layout/player";
 @use "layout/sidebar";
+@use "layout/mainsection";
+@use "layout/toggledbar";
+@use "layout/responsive";
+@use "./layout/liked-songs";

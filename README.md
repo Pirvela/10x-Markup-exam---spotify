@@ -3,32 +3,40 @@
 project/
 │
 ├── index.html
-│
-├── pages/
-│ ├── search.html
-│ └── library.html
+├── library.html
+├── liked-songs.html
+├── search.html
 │
 ├── assets/
-│ ├── images/
-│ └── icons/
+│
+├── css/
+│ ├── main.css
+│ └── main.css.map
+│
+├── fonts/
 │
 ├── scss/
 │ ├── main.scss
 │ │
 │ ├── base/
+│ │ ├── \_fonts.scss
+│ │ ├── \_index.scss
+│ │ ├── \_mixins.scss
 │ │ ├── \_reset.scss
-│ │ ├── \_variables.scss
-│ │ └── \_mixins.scss
+│ │ └── \_variables.scss
 │ │
-│ ├── layout/
-│ │ ├── \_layout.scss
-│ │ ├── \_sidebar.scss
-│ │ ├── \_header.scss
-│ │ └── \_player.scss
+│ ├── components/
+│ │ ├── \_card.scss
+│ │ └── \_filters.scss
 │ │
-│ └── components/
-│ ├── \_card.scss
-│ └── \_filters.scss
+│ └── layout/
+│ ├── \_header.scss
+│ ├── \_layout.scss
+│ ├── \_liked-songs.scss
+│ ├── \_mainsection.scss
+│ ├── \_player.scss
+│ ├── \_responsive.scss
+│ ├── \_sidebar.scss
+│ └── \_toggledbar.scss
 │
-└── css/
-└── main.css
+└── README.md
