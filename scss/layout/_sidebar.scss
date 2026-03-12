@@ -16,13 +16,6 @@
   margin-bottom: 8px;
 }
 
-.main-content {
-  flex: 1;
-  min-width: 0;
-  border: 1px solid #1a1a1a;
-  border-radius: 6px;
-}
-
 /* LIST */
 .sidebar-list {
   display: flex;
@@ -98,7 +91,6 @@
 .inner-page .sidebar {
   background-color: #111111 !important;
   border-radius: 10px;
-  // border-radius: 10px;
   margin: 8px 8px 8px 8px;
-  //  padding: 7px;
+  padding: 7px;
 }
