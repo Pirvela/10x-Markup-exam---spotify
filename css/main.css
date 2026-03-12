@@ -1036,7 +1036,7 @@ footer {
 .sidebar-list {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
   margin-top: -12px;
   padding: 0;
   list-style: none;
@@ -1056,7 +1056,7 @@ footer {
   padding: 0 12px;
   border-radius: 5px;
   font-family: "Satoshi", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: #b3b3b3;
   text-decoration: none;
@@ -1064,8 +1064,8 @@ footer {
 
 /* ICON */
 .sidebar-icon {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
 }
 
@@ -1096,6 +1096,13 @@ footer {
 .sidebar-item--active > a {
   background: #2a2a2a;
   color: #fff;
+}
+
+.liked-page .sidebar {
+  background-color: #111111 !important;
+  border-radius: 10px;
+  margin: 8px 8px 8px 8px;
+  padding: 7px;
 }
 
 .section {
@@ -1754,6 +1761,268 @@ footer {
   }
   .library-row-noborder img {
     opacity: 0.6;
+  }
+}
+.liked-main-content {
+  padding: 16px;
+  padding-bottom: calc(72px + 24px);
+  height: calc(100vh - 64px);
+  min-height: 0;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.liked-songs {
+  width: 100%;
+  max-width: 1438px;
+  margin: 0 auto;
+  background-color: #060606;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  height: auto;
+  min-height: unset;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.liked-songs__topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 62px;
+  padding: 0 24px;
+  border-bottom: none;
+}
+.liked-songs__topbar-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 14px;
+  margin-left: auto;
+  flex-wrap: nowrap;
+}
+.liked-songs__add-btn {
+  width: 28px;
+  height: 28px;
+  border: 0;
+  background: transparent;
+  color: #e0e0e0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.liked-songs__add-btn:hover {
+  background-color: #282828;
+}
+.liked-songs__icon-btn, .liked-songs__filter-btn {
+  border: 0;
+  background: transparent;
+  color: #898989;
+  font-family: "Satoshi", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.liked-songs__icon-btn:hover, .liked-songs__filter-btn:hover {
+  color: #e0e0e0;
+}
+.liked-songs__filter-btn {
+  gap: 6px;
+  white-space: nowrap;
+}
+.liked-songs__icon-btn img, .liked-songs__filter-btn img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+}
+.liked-songs__table {
+  width: 100%;
+  overflow-x: auto;
+}
+.liked-songs__head {
+  display: grid;
+  grid-template-columns: 40px 420px 260px 110px 50px;
+  align-items: center;
+  column-gap: 16px;
+  min-height: 42px;
+  padding: 0 16px;
+  border-bottom: 1px solid #1a1a1a;
+  color: #898989;
+  font-size: 11px;
+  font-weight: 500;
+}
+.liked-songs__body {
+  width: 100%;
+}
+.liked-songs__row {
+  display: grid;
+  grid-template-columns: 40px 420px 260px 80px 40px;
+  align-items: center;
+  column-gap: 16px;
+  min-height: 60px;
+  padding: 0 16px;
+}
+.liked-songs__row:hover {
+  background-color: #282828;
+}
+.liked-songs__col, .liked-songs__index, .liked-songs__album-name, .liked-songs__time {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.liked-songs__index {
+  color: #898989;
+  font-size: 13px;
+}
+.liked-songs__track {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+.liked-songs__cover {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.liked-songs__track-info {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2px;
+}
+.liked-songs__track-title {
+  margin: 0;
+  color: #e0e0e0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.liked-songs__track-artist {
+  margin: 0;
+  color: #898989;
+  font-size: 11px;
+  line-height: 1.2;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.liked-songs__album-name {
+  margin: 0;
+  color: #898989;
+  font-size: 13px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.liked-songs__meta {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+.liked-songs__time {
+  color: #898989;
+  font-size: 13px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: visible;
+}
+.liked-songs__like {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  margin-left: 25px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.liked-songs__like img {
+  width: 23px;
+  height: 20px;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .liked-songs__head, .liked-songs__row {
+    grid-template-columns: 36px 360px 220px 70px 36px;
+    column-gap: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .liked-songs__topbar {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 8px;
+  }
+  .liked-songs__topbar-actions {
+    width: auto;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .liked-songs__head {
+    display: none;
+  }
+  .liked-songs__row {
+    grid-template-columns: 28px minmax(0, 1fr) 70px 36px;
+    column-gap: 8px;
+    padding: 0 8px;
+  }
+  .liked-songs__album-name {
+    display: none;
+  }
+  .liked-songs__meta {
+    gap: 8px;
+  }
+}
+@media (max-width: 390px) {
+  .liked-main-content {
+    padding: 8px;
+  }
+  .liked-songs__row {
+    grid-template-columns: 24px minmax(0, 1fr) 58px 28px;
+    column-gap: 8px;
+    min-height: 56px;
+    padding: 0 8px;
+  }
+  .liked-songs__cover {
+    width: 32px;
+    height: 32px;
+  }
+  .liked-songs__track-title {
+    font-size: 13px;
+  }
+  .liked-songs__track-artist, .liked-songs__time {
+    font-size: 11px;
+  }
+  .liked-songs__like img {
+    width: 14px;
+    height: 14px;
   }
 }
 
