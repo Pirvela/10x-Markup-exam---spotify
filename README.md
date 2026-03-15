@@ -56,8 +56,8 @@ project/
 └── README.md
 
 📱 Responsive Design:
-Desktop
 
+Desktop
 Mobile
 
 🤝 Team Contributions:
