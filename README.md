@@ -7,10 +7,15 @@
 A responsive Spotify web clone built using HTML, SCSS, and modern CSS layout techniques.
 
 🛠️ Technologies Used:
+
 HTML5
+
 SCSS / SASS
+
 CSS Flexbox
+
 CSS Grid
+
 Git & GitHub
 
 📁 Project Structure
