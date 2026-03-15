@@ -1,9 +1,11 @@
 # 10x-Markup-exam---spotify
 
 📷 Preview
+
 ![App Screenshot](./assets/images/preview.png)
 
 📌 Project Name:
+
 A responsive Spotify web clone built using HTML, SCSS, and modern CSS layout techniques.
 
 🛠️ Technologies Used:
