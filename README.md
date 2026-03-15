@@ -60,6 +60,21 @@ project/
 Desktop
 Mobile
 
+⚙️ Installation:
+
+git clone https://github.com/Pirvela/10x-Markup-exam---spotify.git
+cd 10x-Markup-exam---spotify
+
+👨‍💻 Authors:
+Mariam Vardosanidze
+Nika Karsidze
+Nodar Pirveli
+
+GitHub:
+https://github.com/mvardosanidze50-cyber
+https://github.com/ImmortalFae
+https://github.com/Pirvela
+
 🤝 Team Contributions:
 
 ### Mariam Vardosanidze
