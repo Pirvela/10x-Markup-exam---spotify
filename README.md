@@ -51,12 +51,12 @@ project/
 │   │
 │   ├── components/
 │   │   ├── _card.scss
-│   │   ├── _filters.scss
-│   │   └── _liked-songs.scss
+│   │   └── _filters.scss
 │   │
 │   └── layout/
 │       ├── _header.scss
 │       ├── _layout.scss
+│       ├── _liked-songs.scss
 │       ├── _mainsection.scss
 │       ├── _player.scss
 │       ├── _responsive.scss
