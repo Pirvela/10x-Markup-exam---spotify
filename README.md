@@ -15,8 +15,8 @@ Git & GitHub
 
 📁 Project Structure
 
+```
 project/
-│
 ├── index.html
 ├── library.html
 ├── liked-songs.html
@@ -25,36 +25,37 @@ project/
 ├── assets/
 │
 ├── css/
-│ ├── main.css
-│ └── main.css.map
+│   ├── main.css
+│   └── main.css.map
 │
 ├── fonts/
 │
 ├── scss/
-│ ├── main.scss
-│ │
-│ ├── base/
-│ │ ├── \_fonts.scss
-│ │ ├── \_index.scss
-│ │ ├── \_mixins.scss
-│ │ ├── \_reset.scss
-│ │ └── \_variables.scss
-│ │
-│ ├── components/
-│ │ ├── \_card.scss
-│ │ ├── \_filters.scss
-│ │ └── \_liked-songs.scss
-│ │
-│ └── layout/
-│ ├── \_header.scss
-│ ├── \_layout.scss
-│ ├── \_mainssection.scss
-│ ├── \_player.scss
-│ ├── \_responsive.scss
-│ ├── \_sidebar.scss
-│ └── \_toggledbar.scss
+│   ├── main.scss
+│   │
+│   ├── base/
+│   │   ├── _fonts.scss
+│   │   ├── _index.scss
+│   │   ├── _mixins.scss
+│   │   ├── _reset.scss
+│   │   └── _variables.scss
+│   │
+│   ├── components/
+│   │   ├── _card.scss
+│   │   ├── _filters.scss
+│   │   └── _liked-songs.scss
+│   │
+│   └── layout/
+│       ├── _header.scss
+│       ├── _layout.scss
+│       ├── _mainsection.scss
+│       ├── _player.scss
+│       ├── _responsive.scss
+│       ├── _sidebar.scss
+│       └── _toggledbar.scss
 │
 └── README.md
+```
 
 📱 Responsive Design:
 
