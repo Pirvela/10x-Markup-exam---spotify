@@ -94,9 +94,9 @@ GitHub:
 
 ### Mariam Vardosanidze
 
-- Implemented and styled the **Sidebar navigation**
-- Worked on **Liked Songs page layout**
-- Implemented **SCSS structure (variables and mixins usage)**
+- Implemented and styled the Sidebar navigation
+- Worked on Liked Songs page layout
+- Implemented SCSS structure (variables and mixins usage)
 - Fixed layout and spacing issues based on Figma design
 
 ### Nika Karsidze
