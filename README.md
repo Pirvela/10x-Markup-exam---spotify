@@ -13,7 +13,8 @@ CSS Flexbox
 CSS Grid
 Git & GitHub
 
-📁 Project Structure:
+📁 Project Structure
+
 project/
 │
 ├── index.html
@@ -41,13 +42,13 @@ project/
 │ │
 │ ├── components/
 │ │ ├── \_card.scss
-│ │ └── \_filters.scss
+│ │ ├── \_filters.scss
+│ │ └── \_liked-songs.scss
 │ │
 │ └── layout/
 │ ├── \_header.scss
 │ ├── \_layout.scss
-│ ├── \_liked-songs.scss
-│ ├── \_mainsection.scss
+│ ├── \_mainssection.scss
 │ ├── \_player.scss
 │ ├── \_responsive.scss
 │ ├── \_sidebar.scss
@@ -58,6 +59,7 @@ project/
 📱 Responsive Design:
 
 Desktop
+
 Mobile
 
 ⚙️ Installation:
