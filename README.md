@@ -23,6 +23,8 @@ project/
 ├── search.html
 │
 ├── assets/
+│   ├── icons/
+│   └── images/
 │
 ├── css/
 │   ├── main.css
