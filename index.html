@@ -563,21 +563,18 @@
             <div class="artist-card">
               <div class="artist-img">
                 <img src="./assets/images/gunsnroses.png" alt="Guns N' Roses" />
-                <button class="remove-btn">×</button>
               </div>
               <p class="artist-card__desc">Guns N' Roses</p>
             </div>
             <div class="artist-card">
               <div class="artist-img">
                 <img src="./assets/images/daft.png" alt="Daft Punk" />
-                <button class="remove-btn">×</button>
               </div>
               <p class="artist-card__desc">Daft Punk</p>
             </div>
             <div class="artist-card">
               <div class="artist-img">
                 <img src="./assets/images/davidbowie.png" alt="David Bowie" />
-                <button class="remove-btn">×</button>
               </div>
               <p class="artist-card__desc">David Bowie</p>
             </div>
@@ -733,7 +730,9 @@
     <script>
       const contactBtn = document.querySelector(".contact-btn");
       const toggledBar = document.querySelector(".toggledbar");
-      const closeBtn = document.querySelector(".toggled-right img:nth-child(2)");
+      const closeBtn = document.querySelector(
+        ".toggled-right img:nth-child(2)",
+      );
       const turnWhiteBtn = document.querySelector(".turn-white-btn");
       const whiteThemeBtn = document.querySelector(".white-theme-btn");
 
